@@ -15,3 +15,8 @@ quiz_guesses = []
 user_score = 0
 question_number = 0
 
+for question in QUESTIONS:
+    print("|||||||||||||||||||||||||||||")
+    print(question)
+for choice in CHOICES[question_number]:
+    print(choice)
