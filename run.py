@@ -18,5 +18,5 @@ question_number = 0
 for question in QUESTIONS:
     print("|||||||||||||||||||||||||||||")
     print(question)
-for choice in CHOICES[question_number]:
-    print(choice)
+    for choice in CHOICES[question_number]:
+        print(choice)
