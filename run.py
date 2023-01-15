@@ -12,7 +12,7 @@ def get_user_answer():
     while is_user_input_invalid:
         user_input = input("Please enter a value between 1-4...")
         is_user_input_invalid != validate_user_input(user_input)
-        if (is_user_input_invalid()):
+        if is_user_input_invalid:
             print("Invalid value. Please enter a value between 1-4...")
     return user_input
 
