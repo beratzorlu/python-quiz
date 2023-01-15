@@ -1,3 +1,5 @@
+#Quiz
+
 QUESTIONS = ("Question1",  
              "Question2", 
              "Question3", 
@@ -20,8 +22,10 @@ for question in QUESTIONS:
     print(question)
     for choice in CHOICES[question_number]:
         print(choice)
-    user_guess = input("Choose correct answer: (I, II, III, IV)").upper()
+
+    user_guess = input("Input correct answer: ").upper()
     user_guesses.append(user_guess)
+
     if user_guess == quiz_answers[question_number]:
         user_score +=100
         print("Correct. Proceed to the next question...")
@@ -30,3 +34,15 @@ for question in QUESTIONS:
         print(f"The correct answer was '{quiz_answers[question_number]}'")
     
     question_number += 1
+
+#Results
+
+print("Here are the answers: ", end="")
+for quiz_answer in quiz_answers:
+    print(quiz_answer, end=" ") 
+print()
+
+print("These were your guesses: ", end="")
+for user_guess in user_guesses:
+    print(user_guess, end=" ")
+print()
