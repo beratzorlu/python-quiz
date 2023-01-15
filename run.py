@@ -1,7 +1,11 @@
+from questions import QUIZ_QUESTIONS
+
+
 def display_next_question(question_number):
     question = QUIZ_QUESTIONS[question_number]
     print(question["questions"])
     print(question["choices"])
+
 
 def get_user_answer():
     is_user_input_invalid = True
@@ -13,21 +17,38 @@ def get_user_answer():
     return user_input
 
 
+def validate_user_input(user_input):
+    return user_input and user_input.isnumeric() and int(user_input) >= 1 and int(user_input) <= 4
 
-#Results
 
-print("Here are the answers: ", end="")
-for quiz_answer in quiz_answers:
-    print(quiz_answer, end=" ") 
-print()
+def check_user_answer(user_input, question_number):
+    question = QUIZ_QUESTIONS[question_number]
+    return question["answer"] == user_input
 
-print("These were your guesses: ", end="")
-for user_guess in user_guesses:
-    print(user_guess, end=" ")
-print()
 
-#User Score
+def display_final_score(user_score):
+    score_percentage = int(user_score / len(QUIZ_QUESTIONS) * 100)
+    print(f"Your final score is {user_score}. You have answered {score_percentage}% of the questions correctly.")
+    return score_percentage
 
-user_score = user_score
-score_percentage = int(user_score / len(QUESTIONS) * 100)
-print(f"Your final score is {user_score}. You have answered {score_percentage}% of the questions correctly.")
+
+def update_score_to_gspread(score, score_percentage):
+    pass
+
+
+def main():
+    question_number = 0
+    score = 0
+    while question_number < QUIZ_QUESTIONS.length:
+        display_next_question(question_number)
+        user_input == get_user_answer()
+        is_correct = check_user_answer(user_input, question_number)
+        if is_correct:
+            score += 100
+        question_number += 1
+    score_percentage = display_final_score(score)
+    update_score_to_gspread(score, score_percentage)
+
+
+if __name__ == '__main__':
+    main()
