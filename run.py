@@ -27,7 +27,7 @@ for question in QUESTIONS:
     user_guesses.append(user_guess)
 
     if user_guess == quiz_answers[question_number]:
-        user_score +=100
+        user_score += 1
         print("Correct. Proceed to the next question...")
     else:
         print("Incorrect. Focus!")
@@ -46,3 +46,9 @@ print("These were your guesses: ", end="")
 for user_guess in user_guesses:
     print(user_guess, end=" ")
 print()
+
+#User Score
+
+user_score = user_score
+score_percentage = int(user_score / len(QUESTIONS) * 100)
+print(f"Your final score is {user_score}. You have answered {score_percentage}% of the questions correctly.")
