@@ -1,45 +1,18 @@
-#Quiz
+def display_next_question(question_number):
+    question = QUIZ_QUESTIONS[question_number]
+    print(question["questions"])
+    print(question["choices"])
 
-QUIZ_QUESTIONS = [
-    {"question": "QUESTION 1",
-    "choices": "1. Choice1", "2. Choice2", "3. Choice3", "4. Choice4",
-    "answer": 1},
-    {"question": "QUESTION 2",
-    "choices": "1. Choice1", "2. Choice2", "3. Choice3", "4. Choice4",
-    "answer": 1},
-    {"question": "QUESTION 3",
-    "choices": "1. Choice1", "2. Choice2", "3. Choice3", "4. Choice4",
-    "answer": 1},
-    {"question": "QUESTION 4",
-    "choices": "1. Choice1", "2. Choice2", "3. Choice3", "4. Choice4",
-    "answer": 1},
-    {"question": "QUESTION 5",
-    "choices": "1. Choice1", "2. Choice2", "3. Choice3", "4. Choice4",
-    "answer": 1},
-]
+def get_user_answer():
+    is_user_input_invalid = True
+    while is_user_input_invalid:
+        user_input = input("Please enter a value between 1-4...")
+        is_user_input_invalid != validate_user_input(user_input)
+        if (is_user_input_invalid()):
+            print("Invalid value. Please enter a value between 1-4...")
+    return user_input
 
-quiz_answers = ("I", "I", "I", "I", "I")
-user_guesses = []
-user_score = 0
-question_number = 0
 
-for question in QUESTIONS:
-    print("|||||||||||||||||||||||||||||")
-    print(question)
-    for choice in CHOICES[question_number]:
-        print(choice)
-
-    user_guess = input("Input correct answer: ").upper()
-    user_guesses.append(user_guess)
-
-    if user_guess == quiz_answers[question_number]:
-        user_score += 1
-        print("Correct. Proceed to the next question...")
-    else:
-        print("Incorrect. Focus!")
-        print(f"The correct answer was '{quiz_answers[question_number]}'")
-    
-    question_number += 1
 
 #Results
 
