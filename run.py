@@ -3,7 +3,7 @@ from questions import QUIZ_QUESTIONS
 
 def display_next_question(question_number):
     question = QUIZ_QUESTIONS[question_number]
-    print(question["questions"])
+    print(question["question"])
     print(question["choices"])
 
 
@@ -39,7 +39,7 @@ def update_score_to_gspread(score, score_percentage):
 def main():
     question_number = 0
     score = 0
-    while question_number < QUIZ_QUESTIONS.length:
+    while question_number < len(QUIZ_QUESTIONS):
         display_next_question(question_number)
         user_input == get_user_answer()
         is_correct = check_user_answer(user_input, question_number)
