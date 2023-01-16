@@ -8,7 +8,6 @@ from questions import QUIZ_QUESTIONS
 from questions import QUIZ_CHOICES
 
 
-
 def run_new_quiz():
     answer_attempts = []
     user_guesses_correct = 0
@@ -23,16 +22,25 @@ def run_new_quiz():
         answer_attempt = input("Enter your answer here:\n")
         answer_attempt = answer_attempt.upper()
         answer_attempts.append(answer_attempt)
+        user_guesses_correct += validate_user_input(QUIZ_QUESTIONS.get(key), answer_attempt)
         current_question_num += 1
 
 
+def validate_user_input(correct_answer, answer_attempt):
+    if correct_answer == answer_attempt:
+        print("Your answer is correct!\n")
+        return 1
+    else:
+        print("Incorrect answer.\n")
+        return 0
+        
 
 def main():
     """
     Execute all fundamental program functions.
     """
     run_new_quiz()
-    # validate_user_input()
+    # validate_user_input(QUIZ_QUESTIONS.get(key), answer_attempt)
     # display_user_score()
     # replay_quiz()
 
