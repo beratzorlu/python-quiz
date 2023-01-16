@@ -25,6 +25,8 @@ def run_new_quiz():
         user_guesses_correct += validate_user_input(QUIZ_QUESTIONS.get(key), answer_attempt)
         current_question_num += 1
 
+    display_user_score(user_guesses_correct, answer_attempts)
+
 
 def validate_user_input(correct_answer, answer_attempt):
     if correct_answer == answer_attempt:
@@ -33,8 +35,18 @@ def validate_user_input(correct_answer, answer_attempt):
     else:
         print("Incorrect answer.\n")
         return 0
-        
 
+
+def display_user_score(user_guesses_correct, answer_attempts):
+    print("Results")
+    print("Answers: ", end=" ")
+    for ind in QUIZ_QUESTIONS:
+        print(QUIZ_QUESTIONS.get(ind), end=" ")
+    print("Your choices: ", end=" ")
+    for ind in answer_attempts:
+        print(ind, end=" ")
+
+   
 def main():
     """
     Execute all fundamental program functions.
