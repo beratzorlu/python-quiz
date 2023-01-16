@@ -1,3 +1,7 @@
+"""
+Contains questions and choices to be imported for the quiz application.
+"""
+
 QUIZ_QUESTIONS = {
     "question1": "A",
     "question2": "A",

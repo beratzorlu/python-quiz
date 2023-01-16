@@ -1,6 +1,66 @@
+"""
+Import questions and choices to be utilized by the program.
+Execute the quiz functionality
+Push user data to databases
+"""
+from pprint import pprint
 from questions import QUIZ_QUESTIONS
+from questions import QUIZ_CHOICES
 
 
+
+def run_new_quiz():
+    user_guesses = []
+    user_guesses_correct = 0
+    current_question_num = 1
+
+    for key in QUIZ_QUESTIONS:
+        print('--')
+        print(key)
+        for choice in QUIZ_CHOICES[current_question_num-1]:
+            print(choice)
+
+
+
+def main():
+    """
+    Execute all fundamental program functions.
+    """
+    run_new_quiz()
+    validate_user_input()
+    display_user_score()
+    replay_quiz()
+
+
+run_new_quiz()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 def display_next_question(question_number):
     question = QUIZ_QUESTIONS[question_number]
     print(question["question"])
@@ -52,3 +112,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+"""
