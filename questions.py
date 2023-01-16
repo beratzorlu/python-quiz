@@ -1,27 +1,25 @@
-QUIZ_QUESTIONS = [
-    {
-        "question": "QUESTION 1",
-        "choices": {1: "Choice1", 2: "Choice2", 3: "Choice3", 4: "Choice4"},
-        "answer": 1,
-    },
-    {
-        "question": "QUESTION 2",
-        "choices": {1: "Choice1", 2: "Choice2", 3: "Choice3", 4: "Choice4"},
-        "answer": 1,
-    },
-    {
-        "question": "QUESTION 3",
-        "choices": {1: "Choice1", 2: "Choice2", 3: "Choice3", 4: "Choice4"},
-        "answer": 1,
-    },
-    {
-        "question": "QUESTION 4",
-        "choices": {1: "Choice1", 2: "Choice2", 3: "Choice3", 4: "Choice4"},
-        "answer": 1,
-    },
-    {
-        "question": "QUESTION 5",
-        "choices": {1: "Choice1", 2: "Choice2", 3: "Choice3", 4: "Choice4"},
-        "answer": 1,
-    },
+QUIZ_QUESTIONS = {
+    "question1": "A",
+    "question2": "A",
+    "question3": "A",
+    "question4": "A",
+    "question5": "A"
+}
+
+QUIZ_CHOICES = [
+    [
+        'A. Choice1', 'B. Choice2', 'C. Choice3', 'D. Choice4'
+    ],
+    [
+        'A. Choice1', 'B. Choice2', 'C. Choice3', 'D. Choice4'
+    ],
+    [
+        'A. Choice1', 'B. Choice2', 'C. Choice3', 'D. Choice4'
+    ],
+    [
+        'A. Choice1', 'B. Choice2', 'C. Choice3', 'D. Choice4'
+    ],
+    [
+        'A. Choice1', 'B. Choice2', 'C. Choice3', 'D. Choice4'
+    ],
 ]
