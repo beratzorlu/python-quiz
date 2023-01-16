@@ -22,6 +22,7 @@ def run_new_quiz():
             print(choice)
         answer_attempt = input("Enter your answer here:\n")
         answer_attempt = answer_attempt.upper()
+        answer_attempts.append(answer_attempt)
         current_question_num += 1
 
 
@@ -31,12 +32,12 @@ def main():
     Execute all fundamental program functions.
     """
     run_new_quiz()
-    validate_user_input()
-    display_user_score()
-    replay_quiz()
+    # validate_user_input()
+    # display_user_score()
+    # replay_quiz()
 
 
-run_new_quiz()
+main()
 
 
 
