@@ -10,15 +10,19 @@ from questions import QUIZ_CHOICES
 
 
 def run_new_quiz():
-    user_guesses = []
+    answer_attempts = []
     user_guesses_correct = 0
     current_question_num = 1
-
+    print('Please choose *ONE* choice from (A, B, C, D)\n')
+    print('Disclaimer: Entered input can only be a choice letter.\n')
     for key in QUIZ_QUESTIONS:
         print('--')
         print(key)
         for choice in QUIZ_CHOICES[current_question_num-1]:
             print(choice)
+        answer_attempt = input("Enter your answer here:\n")
+        answer_attempt = answer_attempt.upper()
+        current_question_num += 1
 
 
 
