@@ -5,6 +5,12 @@ from questions import QUIZ_QUESTIONS
 from questions import QUIZ_CHOICES
 
 
+def welcome_logo():
+    """
+    Display game logo on the terminal.
+    """
+    print('Welcome to:')
+
 def run_new_quiz():
     """
     Display input information to the player.
