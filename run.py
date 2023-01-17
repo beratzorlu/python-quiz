@@ -1,7 +1,6 @@
 """
 Import libraries essential to the function of this application.
 """
-from pprint import pprint
 from questions import QUIZ_QUESTIONS
 from questions import QUIZ_CHOICES
 
