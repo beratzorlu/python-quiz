@@ -30,7 +30,8 @@ def run_new_quiz():
         answer_attempt = input("Enter your answer here:\n")
         answer_attempt = answer_attempt.upper()
         answer_attempts.append(answer_attempt)
-        user_guesses_correct += validate_user_input(QUIZ_QUESTIONS.get(key), answer_attempt)
+        user_guesses_correct += validate_user_input(QUIZ_QUESTIONS.get(key),
+            answer_attempt)
         current_question_num += 1
 
     display_user_score(user_guesses_correct, answer_attempts)
@@ -84,7 +85,6 @@ def replay_quiz():
     replay = replay.upper()
     if replay == "Y":
         return True
-    
     print('Ending quiz and saving user data...')
     print('Terminating application...')
     print('Thank you for playing.')
@@ -102,4 +102,3 @@ def main():
 
 
 main()
-

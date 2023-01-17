@@ -3,27 +3,45 @@ Contains questions and choices to be imported for the quiz application.
 """
 
 QUIZ_QUESTIONS = {
-    "question1": "A",
-    "question2": "A",
-    "question3": "A",
-    "question4": "A",
-    "question5": "A"
+    "What is the most abundant gas in the Earth's atmosphere?": "A",
+    "What term refers to the change of velocity with time?": "D",
+    "What is the SI unit of an electric charge?": "D",
+    "What is the unit of magnetic induction?": "B",
+    "What is the escape velocity of the Earth?": "B",
+    "Which is the weakest force in nature?": "B",
+    "What is the rate of acceleration of gravity on Earth?": "B",
+    "What is the unit of measurement of the electromotive force?": "C",
+    "What is Newton''s first law of motion about?": "A",
+    "Who wrote the Principia?": "C"
 }
+
 
 QUIZ_CHOICES = [
     [
-        'A. Choice1', 'B. Choice2', 'C. Choice3', 'D. Choice4'
+        'A. Nitrogen', 'B. Oxygen', 'C. Carbon Dioxide', 'D. Helium'
     ],
     [
-        'A. Choice11', 'B. Choice21', 'C. Choice311', 'D. Choice4'
+        'A. Motion', 'B. Distance', 'C. Accelaration', 'D. Gravity'
     ],
     [
-        'A. Choice12', 'B. Choice22', 'C. Choice32', 'D. Choice42'
+        'A. Second', 'B. Ampere', 'C. Kelvin', 'D. Coulomb'
     ],
     [
-        'A. Choice13', 'B. Choice23', 'C. Choice33', 'D. Choice43'
+        'A. Newton', 'B. Tesla', 'C. Mole', 'D. Joule'
     ],
     [
-        'A. Choice14', 'B. Choice24', 'C. Choice34', 'D. Choice44'
+        'A. 9.2 km/sec', 'B. 11.2 km/sec', 'C. 2.4 km/sec', 'D. 5.01 km/sec'
     ],
+    [
+        'A. Electromagnetic force', 'B. Gravity', 'C. Weak force', 'D. None'
+    ],
+    [
+        'A. Hertz', 'B. Watt', 'C. Volt', 'D. Pascal'
+    ],
+    [
+        'A. Inertia', 'B. Torque', 'C. Work', 'D. Momentum'
+    ],
+    [
+        'A. Locke', 'B. Edison', 'C. Newton', 'D. Curie'
+    ]
 ]
