@@ -37,7 +37,7 @@ def run_new_quiz():
 
 
 def validate_user_input(correct_answer, answer_attempt):
-    """ 
+    """
     Compare the correct answer with user's answer attempt.
     Display feedback depending on the correctness of user's answer.
     """
@@ -84,22 +84,22 @@ def replay_quiz():
     replay = replay.upper()
     if replay == "Y":
         return True
+    
+    print('Ending quiz and saving user data...')
+    print('Terminating application...')
+    print('Thank you for playing.')
     return False
 
-   
+
 def main():
     """
     Execute all fundamental program functions.
     """
     run_new_quiz()
-    replay_quiz()
 
+    while replay_quiz():
+        run_new_quiz()
 
-while replay_quiz():
-    run_new_quiz()
-    print('Ending quiz and saving user data...')
-    print('Terminating application...')
-    print('Thank you for playing.')
 
 main()
 
