@@ -9,7 +9,7 @@ QUIZ_QUESTIONS = {
     "What is the unit of magnetic induction?": "B",
     "What is the escape velocity of the Earth?": "B",
     "Which is the weakest force in nature?": "B",
-    "What is the rate of acceleration of gravity on Earth?": "B",
+    "What is the rate of acceleration of gravity on Earth?": "C",
     "What is the unit of measurement of the electromotive force?": "C",
     "What is Newton''s first law of motion about?": "A",
     "Who wrote the Principia?": "C"
@@ -34,6 +34,9 @@ QUIZ_CHOICES = [
     ],
     [
         'A. Electromagnetic force', 'B. Gravity', 'C. Weak force', 'D. None'
+    ],
+    [
+        'A. 2,200 km/s', 'B. 343 m/s', 'C. 9.807 m/s^2', 'D. ~400 km/s'
     ],
     [
         'A. Hertz', 'B. Watt', 'C. Volt', 'D. Pascal'

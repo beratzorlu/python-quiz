@@ -25,7 +25,7 @@ def run_new_quiz():
     for key in QUIZ_QUESTIONS:
         print('--')
         print(key)
-        for choice in QUIZ_CHOICES[current_question_num-1]:
+        for choice in QUIZ_CHOICES[current_question_num-1]:  # Index out of range error 17/02/2023 14:22
             print(choice)
         answer_attempt = input("Enter your answer here:\n")
         answer_attempt = answer_attempt.upper()
