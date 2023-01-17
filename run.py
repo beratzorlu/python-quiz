@@ -3,13 +3,28 @@ Import libraries essential to the function of this application.
 """
 from questions import QUIZ_QUESTIONS
 from questions import QUIZ_CHOICES
+from colours import QuizColours as C
 
 
 def welcome_logo():
     """
     Display game logo on the terminal.
     """
-    print('Welcome to:')
+    print(' ')
+    print(C.Y + 'Presenting:')
+    print(' ')
+    print(C.R + ' _____           _                     ___             _    ')
+    print(C.R + '/  ___|         | |                   |_  |           | |   ')
+    print(C.G + '\ `--. _   _ ___| |_ ___ _ __ ___       | |_   _ _ __ | | __')
+    print(C.G + " `--. \ | | / __| __/ _ \ '_ ` _ \      | | | | | '_ \| |/ /")
+    print(C.G + '/\__/ / |_| \__ \ ||  __/ | | | | | /\__/ / |_| | | | |   < ')
+    print(C.G + '\____/ \__, |___/\__\___|_| |_| |_| \____/ \__,_|_| |_|_|\_\ ')
+    print(C.R + '         _/ |                                               ')
+    print(C.R + '        |___/                                               ')
+    print(' ')
+    print(C.Y + '                                          By Berat Zorlu')
+    print(' ')
+
 
 def run_new_quiz():
     """
@@ -101,6 +116,7 @@ def main():
     """
     Execute all fundamental program functions.
     """
+    welcome_logo()
     run_new_quiz()
 
     while replay_quiz():
