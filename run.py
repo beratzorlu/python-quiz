@@ -1,6 +1,8 @@
 """
 Import libraries essential to the function of this application.
 """
+import time
+from time import sleep
 from questions import QUIZ_QUESTIONS
 from questions import QUIZ_CHOICES
 from colours import QuizColours as C
@@ -24,6 +26,7 @@ def welcome_logo():
     print(' ')
     print(C.Y + '                                          By Berat Zorlu')
     print(' ')
+    time.sleep(1.3)
 
 
 def run_new_quiz():
