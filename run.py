@@ -66,6 +66,7 @@ def validate_user_input(correct_answer, answer_attempt):
     Compare the correct answer with user's answer attempt.
     Display feedback depending on the correctness of user's answer.
     """
+    
     if correct_answer == answer_attempt:
         print("Your answer is correct!\n")
         return 1
@@ -109,15 +110,17 @@ def replay_quiz():
     replay = input('Would you like to try again? (Y/N)\n')
     replay = replay.upper()
     if replay == "Y":
-        print('Restarting application...\n')
+        print(C.B + 'Restarting application...\n')
+        welcome_logo()
+        run_new_quiz()
         return True
     elif replay == "N":
-        print('Ending quiz and saving user data...')
-        print('Terminating application...')
-        print('Thank you for playing.')
+        print(C.B + 'Ending quiz and saving user data...')
+        print(C.B + 'Terminating application...')
+        print(C.Y + 'Thank you for playing.')
         return False
     elif input not in {replay == "Y", replay == "N"}:
-        print("Invalid")
+        print(C.R + "Invalid input submitted. Please enter 'Y' or 'N'")
         replay_quiz()
     else:
         return True
