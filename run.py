@@ -69,8 +69,9 @@ def validate_user_input(correct_answer, answer_attempt):
     if correct_answer == answer_attempt:
         print("Your answer is correct!\n")
         return 1
-    print("Incorrect answer.\n")
-    return 0
+    if correct_answer != answer_attempt:
+        print("Incorrect answer.\n")
+        return 0
 
 
 def display_user_score(user_guesses_correct, answer_attempts):
@@ -108,13 +109,20 @@ def replay_quiz():
     replay = input('Would you like to try again? (Y/N)\n')
     replay = replay.upper()
     if replay == "Y":
+        print('Restarting application...\n')
         return True
-    print('Ending quiz and saving user data...')
-    print('Terminating application...')
-    print('Thank you for playing.')
-    return False
+    elif replay == "N":
+        print('Ending quiz and saving user data...')
+        print('Terminating application...')
+        print('Thank you for playing.')
+        return False
+    elif input not in {replay == "Y", replay == "N"}:
+        print("Invalid")
+        replay_quiz()
+    else:
+        return True
 
-
+    
 def main():
     """
     Execute all fundamental program functions.
