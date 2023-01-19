@@ -87,6 +87,8 @@ def display_user_score(user_guesses_correct, answer_attempts):
     Iterate through answer_attempts to display user's answer attempt history.
     Calculate a percentage value to display user's overall accuracy.
     """
+    sheet_list = []
+    username = input(print('Please enter username: \n'))
     print(' ')
     print('--\n')
     print('You have completed the quiz, calculating results...\n')
@@ -94,7 +96,6 @@ def display_user_score(user_guesses_correct, answer_attempts):
     print(C.Y + "Quiz Results")
     print('---')
     print(C.G + "Answers: \n", end=" ")
-    sheet_list = []
     for ind in QUIZ_QUESTIONS:
         print(QUIZ_QUESTIONS.get(ind), end=" ")
     print(' ')
@@ -104,8 +105,9 @@ def display_user_score(user_guesses_correct, answer_attempts):
     print(' ')
     final_score_perc = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
     final_score = (user_guesses_correct * 100)
-    username = input(print('Please enter username: \n'))
-    clear_screen()
+    # username = input(print('Please enter username: \n'))
+    # clear_screen()
+    enter_username(username)
     list_append(sheet_list, username)
     list_append(sheet_list, final_score)
     list_append(sheet_list, final_score_perc)
@@ -115,10 +117,6 @@ def display_user_score(user_guesses_correct, answer_attempts):
     print(f'Your final score is: {final_score}\n')
     time.sleep(1)
     print(f'You have performed with an accuracy of "{str(final_score_perc)}%"\n')
-
-
-def list_append(list, data):
-    list.append(data)
 
 
 def replay_quiz():
@@ -149,6 +147,23 @@ def replay_quiz():
         replay_quiz()
     else:
         return True
+
+
+def enter_username(username):
+    print(username)
+    if len(username) > 12:
+        print(C.R + 'Please do not enter no more than 12 characters.')
+    elif username == ' ':
+        print(C.R + 'You cannot enter an empty value.')
+    elif len(username) < 3:
+        print(C.R + 'Username cannot be less than 3 characters.')
+    else:
+        print(C.G + 'Username valid!')
+        clear_screen()
+        
+
+def list_append(list, data):
+    list.append(data)
 
 
 def clear_screen():
