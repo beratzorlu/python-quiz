@@ -100,7 +100,7 @@ def display_user_score(user_guesses_correct, answer_attempts):
     for ind in QUIZ_QUESTIONS:
         print(QUIZ_QUESTIONS.get(ind), end=" ")
     print(' ')
-    print("Your choices: \n", end=" ")
+    print(C.G + "Your choices: \n", end=" ")
     for ind in answer_attempts:
         print(ind, end=" ")
     print(' ')
@@ -149,7 +149,7 @@ def replay_quiz():
         replay_quiz()
     else:
         return True
-    
+  
 
 def get_username():
     while True:
@@ -164,18 +164,26 @@ def get_username():
     return username
 
 
-def validate_username(input):
-    if len(input) > 12:
+def validate_username(user_input):
+    """
+    Validate user input by comparing it to various cases.
+        -If input is valid, return True.
+        -If input is invalid, return False.
+    """
+    if len(user_input) > 12:
         print(C.R + 'Please do not enter no more than 12 characters.')
         return False
-    elif input == ' ':
+    elif user_input == '':
         print(C.R + 'You cannot enter an empty value.')
         return False
-    elif len(input) < 3:
+    elif len(user_input) < 3:
         print(C.R + 'Username cannot be less than 3 characters.')
         return False
+    elif user_input.strip() == '':
+        print(C.R + 'You cannot enter an empty value.')
+        return False
     else:
-        return True 
+        return True
 
 
 def list_append(list, data):
