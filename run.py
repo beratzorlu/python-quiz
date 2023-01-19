@@ -66,7 +66,7 @@ def validate_user_input(correct_answer, answer_attempt):
     Compare the correct answer with user's answer attempt.
     Display feedback depending on the correctness of user's answer.
     """
-    
+    # Error handling issue 17.01.2023 ~17:00
     if correct_answer == answer_attempt:
         print("Your answer is correct!\n")
         return 1
@@ -96,8 +96,10 @@ def display_user_score(user_guesses_correct, answer_attempts):
     for ind in answer_attempts:
         print(ind, end=" ")
     print(' ')
-    final_score = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
-    print(f'You have performed with an accuracy of "{str(final_score)}%"')
+    final_score_percentage = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
+    final_score = (user_guesses_correct * 100)
+    print(f'Your final score is: {final_score}')
+    print(f'You have performed with an accuracy of "{str(final_score_percentage)}%"')
 
 
 def replay_quiz():
