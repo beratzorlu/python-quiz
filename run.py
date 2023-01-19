@@ -84,6 +84,9 @@ def display_user_score(user_guesses_correct, answer_attempts):
     Print informative text about quiz completion and score calculation.
     Iterate through the questions list to extract and display correct answers.
     Iterate through answer_attempts to display user's answer attempt history.
+    Prompt the user to input a username.
+    Validate the username.
+    Append acquired data into a list and upload it to the database.
     Calculate a percentage value to display user's overall accuracy.
     """
     sheet_list = []
@@ -103,8 +106,8 @@ def display_user_score(user_guesses_correct, answer_attempts):
     print(' ')
     final_score_perc = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
     final_score = (user_guesses_correct * 100)
-    get_username()
-    validate_username()
+    username = get_username()
+    validate_username(username)
     list_append(sheet_list, username)
     list_append(sheet_list, final_score)
     list_append(sheet_list, final_score_perc)
@@ -162,17 +165,17 @@ def get_username():
 
 
 def validate_username(input):
-
-    while True:
-        if len(input) > 12:
-            print(C.R + 'Please do not enter no more than 12 characters.')
-        elif input == ' ':
-            print(C.R + 'You cannot enter an empty value.')
-        elif len(input) < 3:
-            print(C.R + 'Username cannot be less than 3 characters.')
-        else:
-            print(C.G + 'Username valid!')
-            clear_screen()
+    if len(input) > 12:
+        print(C.R + 'Please do not enter no more than 12 characters.')
+        return False
+    elif input == ' ':
+        print(C.R + 'You cannot enter an empty value.')
+        return False
+    elif len(input) < 3:
+        print(C.R + 'Username cannot be less than 3 characters.')
+        return False
+    else:
+        return True 
 
 
 def list_append(list, data):
