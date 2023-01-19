@@ -33,6 +33,12 @@ def welcome_logo():
 
 
 def game_lore():
+    """
+    Display a series of text relevant to the narrative of the game.
+    Space out the text by placing time pauses between each print.
+    Add colour to certain parts to add styling.
+    Clear screen and prepare the space for the quiz questions.
+    """
     print_text_slow('In the dystopian future of 2555...\n')
     time.sleep(1)
     print_text_slow('Mankind has abandoned the pursue of arts.\n')
@@ -43,7 +49,7 @@ def game_lore():
     time.sleep(1)
     print_text_slow('Science became a neccessity for survival.\n')
     time.sleep(1)
-    print_text_slow('All other pursuits where shunned by society.\n')
+    print_text_slow('All other pursuits were shunned by society.\n')
     time.sleep(1)
     print_text_slow('Today, every soul is expected to know science.\n')
     time.sleep(1)
@@ -183,6 +189,12 @@ def replay_quiz():
   
 
 def get_username():
+    """
+    Display instructive text regarding the expected user input.
+    Take user input and assign it to the username variable.
+    Pass the variable in validate_username() function.
+    If successful, break the while loop and return the username value.
+    """
     while True:
         time.sleep(1)
         clear_screen()
@@ -227,6 +239,11 @@ def validate_username(user_input):
 
 
 def print_text_slow(str):
+    """
+    This is to provide a typing animation for the game_lore() function.
+    Loop through each character in a string.
+    Write each string on the terminal in slow succession.
+    """
     for char in str:
         time.sleep(.08)
         sys.stdout.write(char)
@@ -234,12 +251,16 @@ def print_text_slow(str):
 
 
 def list_append(list, data):
+    """
+    Take list and data parameters.
+    Append data into specified list.
+    """
     list.append(data)
 
 
 def clear_screen():
     """
-    Delete all content on console
+    Delete all visible text content on console.
     """
     os.system("cls" if os.name == "nt" else "clear")
 
