@@ -1,7 +1,7 @@
 """
 Import libraries essential to the function of this application.
 """
-
+import database as db
 import time
 from time import sleep
 from questions import QUIZ_QUESTIONS
@@ -45,14 +45,14 @@ def run_new_quiz():
     answer_attempts = []
     user_guesses_correct = 0
     current_question_num = 1
-    print('Please choose *ONE* choice from (A, B, C, D)\n')
-    print('Disclaimer: Entered input can only be a choice letter.\n')
+    print(C.G + 'Please choose *ONE* choice from (A, B, C, D)\n')
+    print(C.G + 'Disclaimer: Entered input can only be a choice letter.\n')
     for key in QUIZ_QUESTIONS:
-        print('--')
+        print('---')
         print(key)
         for choice in QUIZ_CHOICES[current_question_num-1]:
             print(choice)
-        answer_attempt = input("Enter your answer here:\n")
+        answer_attempt = input(C.G + "Enter your answer here:\n")
         answer_attempt = answer_attempt.upper()
         answer_attempts.append(answer_attempt)
         user_guesses_correct += validate_user_input(QUIZ_QUESTIONS.get(key),
@@ -69,10 +69,12 @@ def validate_user_input(correct_answer, answer_attempt):
     """
     # Error handling issue 17.01.2023 ~17:00
     if correct_answer == answer_attempt:
-        print("Your answer is correct!\n")
+        print(' ')
+        print(C.G + "Your answer is correct!\n")
         return 1
     if correct_answer != answer_attempt:
-        print("Incorrect answer.\n")
+        print(' ')
+        print(C.R + "Incorrect answer.\n")
         return 0
 
 
@@ -86,21 +88,25 @@ def display_user_score(user_guesses_correct, answer_attempts):
     print(' ')
     print('--\n')
     print('You have completed the quiz, calculating results...\n')
-    print('--')
-    print("Results")
-    print('--')
-    print("Answers: ", end=" ")
+    print('---')
+    print(C.Y + "Quiz Results")
+    print('---')
+    print(C.G + "Answers: \n", end=" ")
+    sheet_list = []
     for ind in QUIZ_QUESTIONS:
         print(QUIZ_QUESTIONS.get(ind), end=" ")
     print(' ')
-    print("Your choices: ", end=" ")
+    print("Your choices: \n", end=" ")
     for ind in answer_attempts:
         print(ind, end=" ")
     print(' ')
     final_score_perc = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
     final_score = (user_guesses_correct * 100)
-    print(f'Your final score is: {final_score}')
-    print(f'You have performed with an accuracy of "{str(final_score_perc)}%"')
+    sheet_list.append(final_score)
+    sheet_list.append(final_score_perc)
+    db.update_worksheet(sheet_list, 'user')
+    print(f'Your final score is: {final_score}\n')
+    print(f'You have performed with an accuracy of "{str(final_score_perc)}%"\n')
 
 
 def replay_quiz():
@@ -110,20 +116,24 @@ def replay_quiz():
         -If yes, start the quiz again.
         -If no, terminate the application.
     """
-    replay = input('Would you like to try again? (Y/N)\n')
+    replay = input(C.Y + 'Would you like to try again? (Y/N)\n')
     replay = replay.upper()
     if replay == "Y":
         print(C.B + 'Restarting application...\n')
+        time.sleep(1)
         welcome_logo()
         run_new_quiz()
         return True
     elif replay == "N":
-        print(C.B + 'Ending quiz and saving user data...')
-        print(C.B + 'Terminating application...')
-        print(C.Y + 'Thank you for playing.')
+        print(' ')
+        print(C.B + 'Terminating application...\n')
+        time.sleep(1)
+        print(C.Y + 'Thank you for playing.\n')
+        print(C.Y + 'Copyright Berat Zorlu - 2023')
         return False
     elif input not in {replay == "Y", replay == "N"}:
         print(C.R + "Invalid input submitted. Please enter 'Y' or 'N'")
+        time.sleep(1)
         replay_quiz()
     else:
         return True
