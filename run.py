@@ -1,6 +1,7 @@
 """
 Import libraries essential to the function of this application.
 """
+import sys
 import os
 import database as db
 import time
@@ -31,6 +32,33 @@ def welcome_logo():
     time.sleep(1.3)
 
 
+def game_lore():
+    print_text_slow('In the dystopian future of 2555...\n')
+    time.sleep(1)
+    print_text_slow('Mankind has abandoned the pursue of arts.\n')
+    time.sleep(1)
+    print_text_slow('Our planet continuously degraded...\n')
+    time.sleep(1)
+    print_text_slow('Industry and society only benefited from technology.\n')
+    time.sleep(1)
+    print_text_slow('Science became a neccessity for survival.\n')
+    time.sleep(1)
+    print_text_slow('All other pursuits where shunned by society.\n')
+    time.sleep(1)
+    print_text_slow('Today, every soul is expected to know science.\n')
+    time.sleep(1)
+    print_text_slow('Citizens are tested for their fundamental knowledge.\n')
+    time.sleep(1)
+    print_text_slow('Those who succeed get the privilage to continue their lives.\n')
+    time.sleep(1)
+    print_text_slow('Those who do not, are discarded as...\n')
+    time.sleep(1)
+    print(C.R + 'System ' + C.G + 'Junk\n')
+    print(' ')
+    time.sleep(2)
+    clear_screen()
+
+
 def run_new_quiz():
     """
     Display input information to the player.
@@ -45,6 +73,9 @@ def run_new_quiz():
     answer_attempts = []
     user_guesses_correct = 0
     current_question_num = 1
+    print(C.Y + 'You cannot return to previous questions.')
+    print(C.Y + 'You are not allowed to change yours answers.')
+    print(C.Y + 'There are 10 question in total.')
     print(C.Y + 'Please choose *ONE* choice from (A, B, C, D)\n')
     print(C.R + 'Disclaimer: ' + C.Y + 
           'Entered input can only be a choice letter.\n')
@@ -195,6 +226,13 @@ def validate_username(user_input):
         return True
 
 
+def print_text_slow(str):
+    for char in str:
+        time.sleep(.08)
+        sys.stdout.write(char)
+        sys.stdout.flush()
+
+
 def list_append(list, data):
     list.append(data)
 
@@ -211,6 +249,7 @@ def main():
     Execute all fundamental program functions.
     """
     welcome_logo()
+    game_lore()
     run_new_quiz()
 
     while replay_quiz():

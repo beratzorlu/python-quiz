@@ -8,7 +8,7 @@ class QuizColours():
     R = Fore.RED
     B = Fore.BLUE
     Y = Fore.YELLOW
-    BACK_G = Back.GREEN
-    BACK_R = Back.RED
-    BACK_B = Back.BLUE
-    BACK_Y = Back.YELLOW
+    BG = Back.GREEN
+    BR = Back.RED
+    BB = Back.BLUE
+    BY = Back.YELLOW
