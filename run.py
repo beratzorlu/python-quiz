@@ -96,10 +96,10 @@ def display_user_score(user_guesses_correct, answer_attempts):
     for ind in answer_attempts:
         print(ind, end=" ")
     print(' ')
-    final_score_percentage = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
+    final_score_perc = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
     final_score = (user_guesses_correct * 100)
     print(f'Your final score is: {final_score}')
-    print(f'You have performed with an accuracy of "{str(final_score_percentage)}%"')
+    print(f'You have performed with an accuracy of "{str(final_score_perc)}%"')
 
 
 def replay_quiz():
