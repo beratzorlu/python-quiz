@@ -41,7 +41,6 @@ def run_new_quiz():
     Validate user input.
     Increment question number by 1.
     Display user score after last question.
-
     """
     answer_attempts = []
     user_guesses_correct = 0
@@ -88,7 +87,6 @@ def display_user_score(user_guesses_correct, answer_attempts):
     Calculate a percentage value to display user's overall accuracy.
     """
     sheet_list = []
-    username = input(print('Please enter username: \n'))
     print(' ')
     print('--\n')
     print('You have completed the quiz, calculating results...\n')
@@ -105,9 +103,8 @@ def display_user_score(user_guesses_correct, answer_attempts):
     print(' ')
     final_score_perc = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
     final_score = (user_guesses_correct * 100)
-    # username = input(print('Please enter username: \n'))
-    # clear_screen()
-    enter_username(username)
+    get_username()
+    validate_username()
     list_append(sheet_list, username)
     list_append(sheet_list, final_score)
     list_append(sheet_list, final_score_perc)
@@ -131,11 +128,13 @@ def replay_quiz():
     if replay == "Y":
         print(C.B + 'Restarting application...\n')
         time.sleep(1)
+        clear_screen()
         welcome_logo()
         run_new_quiz()
         return True
     elif replay == "N":
         print(' ')
+        clear_screen()
         print(C.B + 'Terminating application...\n')
         time.sleep(1)
         print(C.Y + 'Thank you for playing.\n')
@@ -147,20 +146,34 @@ def replay_quiz():
         replay_quiz()
     else:
         return True
+    
+
+def get_username():
+    while True:
+        username_input = input(print('Please enter username: \n'))
+
+        username = username_input
+
+        if validate_username(username):
+            print('Username is valid!')
+            break
+    
+    return username
 
 
-def enter_username(username):
-    print(username)
-    if len(username) > 12:
-        print(C.R + 'Please do not enter no more than 12 characters.')
-    elif username == ' ':
-        print(C.R + 'You cannot enter an empty value.')
-    elif len(username) < 3:
-        print(C.R + 'Username cannot be less than 3 characters.')
-    else:
-        print(C.G + 'Username valid!')
-        clear_screen()
-        
+def validate_username(input):
+
+    while True:
+        if len(input) > 12:
+            print(C.R + 'Please do not enter no more than 12 characters.')
+        elif input == ' ':
+            print(C.R + 'You cannot enter an empty value.')
+        elif len(input) < 3:
+            print(C.R + 'Username cannot be less than 3 characters.')
+        else:
+            print(C.G + 'Username valid!')
+            clear_screen()
+
 
 def list_append(list, data):
     list.append(data)
