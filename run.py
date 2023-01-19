@@ -1,6 +1,7 @@
 """
 Import libraries essential to the function of this application.
 """
+
 import time
 from time import sleep
 from questions import QUIZ_QUESTIONS
