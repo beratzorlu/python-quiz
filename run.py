@@ -1,6 +1,7 @@
 """
 Import libraries essential to the function of this application.
 """
+import os
 import database as db
 import time
 from time import sleep
@@ -53,7 +54,7 @@ def run_new_quiz():
         print(key)
         for choice in QUIZ_CHOICES[current_question_num-1]:
             print(choice)
-        answer_attempt = input(C.G + "Enter your answer here:\n")
+        answer_attempt = input(C.Y + "Enter your answer here:\n")
         answer_attempt = answer_attempt.upper()
         answer_attempts.append(answer_attempt)
         user_guesses_correct += validate_user_input(QUIZ_QUESTIONS.get(key),
@@ -103,11 +104,21 @@ def display_user_score(user_guesses_correct, answer_attempts):
     print(' ')
     final_score_perc = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
     final_score = (user_guesses_correct * 100)
-    sheet_list.append(final_score)
-    sheet_list.append(final_score_perc)
+    username = input(print('Please enter username: \n'))
+    clear_screen()
+    list_append(sheet_list, username)
+    list_append(sheet_list, final_score)
+    list_append(sheet_list, final_score_perc)
     db.update_worksheet(sheet_list, 'user')
+    print(f'Displaying performance analysis for {username}...\n')
+    time.sleep(1)
     print(f'Your final score is: {final_score}\n')
+    time.sleep(1)
     print(f'You have performed with an accuracy of "{str(final_score_perc)}%"\n')
+
+
+def list_append(list, data):
+    list.append(data)
 
 
 def replay_quiz():
@@ -130,7 +141,7 @@ def replay_quiz():
         print(C.B + 'Terminating application...\n')
         time.sleep(1)
         print(C.Y + 'Thank you for playing.\n')
-        print(C.Y + 'Copyright Berat Zorlu - 2023')
+        print(C.Y + 'Copyright Berat Zorlu - 2023 for Code Institute PP3')
         return False
     elif input not in {replay == "Y", replay == "N"}:
         print(C.R + "Invalid input submitted. Please enter 'Y' or 'N'")
@@ -139,7 +150,14 @@ def replay_quiz():
     else:
         return True
 
-    
+
+def clear_screen():
+    """
+    Delete all content on console
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
+
 def main():
     """
     Execute all fundamental program functions.
