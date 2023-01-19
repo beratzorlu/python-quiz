@@ -90,9 +90,11 @@ def display_user_score(user_guesses_correct, answer_attempts):
     Calculate a percentage value to display user's overall accuracy.
     """
     sheet_list = []
+    username = get_username()
+    validate_username(username)
     print(' ')
     print('--\n')
-    print('You have completed the quiz, calculating results...\n')
+    print(C.B + 'You have completed the quiz, calculating results...\n')
     print('---')
     print(C.Y + "Quiz Results")
     print('---')
@@ -106,13 +108,11 @@ def display_user_score(user_guesses_correct, answer_attempts):
     print(' ')
     final_score_perc = int((user_guesses_correct/len(QUIZ_QUESTIONS))*100)
     final_score = (user_guesses_correct * 100)
-    username = get_username()
-    validate_username(username)
     list_append(sheet_list, username)
     list_append(sheet_list, final_score)
     list_append(sheet_list, final_score_perc)
     db.update_worksheet(sheet_list, 'user')
-    print(f'Displaying performance analysis for {username}...\n')
+    print(f'Displaying performance analysis for "{username}"...\n')
     time.sleep(1)
     print(f'Your final score is: {final_score}\n')
     time.sleep(1)
@@ -153,12 +153,21 @@ def replay_quiz():
 
 def get_username():
     while True:
-        username_input = input(print('Please enter username: \n'))
+        time.sleep(1)
+        clear_screen()
+        print(C.G + 'You have answered all questions.')
+        print(C.G + 'Please provide a username to save your data.\n')
+        print(C.B + '1. Your input should consist of 12 characters.\n')
+        print(C.B + '2. Input cannot be less than 3 characters.\n')
+        print(C.B + '3. Empty values are not accepted.\n')
+        username_input = input(print(C.Y + 'Please provde a username: \n'))
+        clear_screen()
 
         username = username_input
 
         if validate_username(username):
-            print('Username is valid!')
+            print('Valid username entered. Proceessing...\n')
+            time.sleep(1)
             break
     
     return username
@@ -171,16 +180,16 @@ def validate_username(user_input):
         -If input is invalid, return False.
     """
     if len(user_input) > 12:
-        print(C.R + 'Please do not enter no more than 12 characters.')
+        print(C.R + 'Please do not enter no more than 12 characters.\n')
         return False
     elif user_input == '':
-        print(C.R + 'You cannot enter an empty value.')
+        print(C.R + 'You cannot enter an empty value.\n')
         return False
     elif len(user_input) < 3:
-        print(C.R + 'Username cannot be less than 3 characters.')
+        print(C.R + 'Username cannot be less than 3 characters.\n')
         return False
     elif user_input.strip() == '':
-        print(C.R + 'You cannot enter an empty value.')
+        print(C.R + 'You cannot enter an empty value.\n')
         return False
     else:
         return True

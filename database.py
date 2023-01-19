@@ -26,7 +26,10 @@ def update_worksheet(data, worksheet):
     Pushes this data to the Google Spreadsheet database.
     Provides feedback of the process to the user in text format.
     """
-    print(C.B + 'Quiz complete...\n')
+    print(' ')
+    print(C.B + 'Processing data...\n')
+    time.sleep(1)
+    print(C.G + 'Data processing complete.\n')
     time.sleep(1)
     print(C.B + f"Updating '{worksheet}' data in database...\n")
     target_worksheet = SHEET.worksheet(worksheet)
