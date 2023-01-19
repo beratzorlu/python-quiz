@@ -45,8 +45,9 @@ def run_new_quiz():
     answer_attempts = []
     user_guesses_correct = 0
     current_question_num = 1
-    print(C.G + 'Please choose *ONE* choice from (A, B, C, D)\n')
-    print(C.G + 'Disclaimer: Entered input can only be a choice letter.\n')
+    print(C.Y + 'Please choose *ONE* choice from (A, B, C, D)\n')
+    print(C.R + 'Disclaimer: ' + C.Y + 
+          'Entered input can only be a choice letter.\n')
     for key in QUIZ_QUESTIONS:
         print('---')
         print(key)
