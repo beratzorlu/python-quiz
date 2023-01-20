@@ -33,6 +33,11 @@ def welcome_logo():
 
 
 def game_lore():
+    """
+    Display text that contain relevant information to the narrative of the game.
+    Place pauses between each text print to provide spacing for the animations.
+    Clear the screen after completion to make space for the quiz questions.
+    """
     print_text_slow('In the dystopian future of 2555...\n')
     time.sleep(1)
     print_text_slow('Mankind has abandoned the pursue of arts.\n')
