@@ -33,12 +33,6 @@ def welcome_logo():
 
 
 def game_lore():
-    """
-    Display a series of text relevant to the narrative of the game.
-    Space out the text by placing time pauses between each print.
-    Add colour to certain parts to add styling.
-    Clear screen and prepare the space for the quiz questions.
-    """
     print_text_slow('In the dystopian future of 2555...\n')
     time.sleep(1)
     print_text_slow('Mankind has abandoned the pursue of arts.\n')
@@ -66,6 +60,7 @@ def game_lore():
     print('---')
     time.sleep(5)
     clear_screen()
+
 
 
 def run_new_quiz():
@@ -176,6 +171,7 @@ def replay_quiz():
         clear_screen()
         welcome_logo()
         run_new_quiz()
+        replay_quiz()
         return True
     elif replay == "N":
         print(' ')
@@ -189,9 +185,7 @@ def replay_quiz():
         print(C.R + "Invalid input submitted. Please enter 'Y' or 'N'")
         time.sleep(1)
         replay_quiz()
-    else:
-        return True
-  
+    
 
 def get_username():
     """
@@ -276,9 +270,7 @@ def main():
     welcome_logo()
     game_lore()
     run_new_quiz()
-
-    while replay_quiz():
-        run_new_quiz()
+    replay_quiz()
 
 
 main()
