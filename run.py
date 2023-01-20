@@ -60,8 +60,11 @@ def game_lore():
     print_text_slow('Those who do not, are discarded as...\n')
     time.sleep(1)
     print(C.R + 'System ' + C.G + 'Junk\n')
-    print(' ')
     time.sleep(2)
+    print('--\n')
+    print(C.B + 'Assesment initialization is complete, executing application...\n')
+    print('---')
+    time.sleep(5)
     clear_screen()
 
 
@@ -204,13 +207,13 @@ def get_username():
         print(C.B + '2. Input cannot be less than 3 characters.\n')
         print(C.B + '3. Empty values are not accepted.\n')
         username_input = input(print(C.Y + 'Please provde a username: \n'))
-        clear_screen()
 
         username = username_input
 
         if validate_username(username):
             print('Valid username entered. Proceessing...\n')
             time.sleep(1)
+            clear_screen()
             break
     
     return username
@@ -245,7 +248,7 @@ def print_text_slow(str):
     Write each string on the terminal in slow succession.
     """
     for char in str:
-        time.sleep(.08)
+        time.sleep(.09)
         sys.stdout.write(char)
         sys.stdout.flush()
 
