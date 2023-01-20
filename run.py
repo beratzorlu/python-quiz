@@ -13,7 +13,7 @@ from colours import QuizColours as C
 
 def welcome_logo():
     """
-    Display game logo on the terminal.
+    Display ASCII game logo on the terminal.
     """
     print(' ')
     print(C.Y + 'Presenting:')
@@ -34,7 +34,7 @@ def welcome_logo():
 
 def game_lore():
     """
-    Display text that contain relevant information to the narrative of the game.
+    Display text that contain details relevant to the narrative of the game.
     Place pauses between each text print to provide spacing for the animations.
     Clear the screen after completion to make space for the quiz questions.
     """
@@ -92,7 +92,6 @@ def run_new_quiz():
         print(key)
         for choice in QUIZ_CHOICES[current_question_num-1]:
             print(choice)
-        # answer_attempt = input(C.Y + "Enter your answer here:\n").upper()
         answer_attempt = get_answer()
         validate_answer_attempt(answer_attempt)
         answer_attempts.append(answer_attempt)
@@ -104,6 +103,13 @@ def run_new_quiz():
 
 
 def get_answer():
+    """
+    Take answer input from the player.
+    Place the provided value into a answer_attempt variable.
+    Initiate a while loop.
+    Pass answer_attempt into the validate_answer_attempt() function.
+    If valid input is returned, break the loop and return answer_attempt.
+    """
     while True:
         answer_input = input(C.Y + "Enter your answer here:\n").upper()
         answer_attempt = answer_input
@@ -114,6 +120,11 @@ def get_answer():
 
 
 def validate_answer_attempt(user_answer_attempt):
+    """
+    Validate the answer by comparing to a specific condition.
+        -If input is valid, return True and display error.
+        -If input is invalid, return False.
+    """
     if user_answer_attempt not in ['A', 'B', 'C', 'D']:
         print(C.R + 'Invalid input. Please enter A, B, C or D.')
         return False
