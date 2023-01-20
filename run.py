@@ -31,7 +31,7 @@ def welcome_logo():
     print(' ')
     time.sleep(1.3)
 
-
+"""
 def game_lore():
     print_text_slow('In the dystopian future of 2555...\n')
     time.sleep(1)
@@ -60,8 +60,7 @@ def game_lore():
     print('---')
     time.sleep(5)
     clear_screen()
-
-
+"""
 
 def run_new_quiz():
     """
@@ -88,24 +87,40 @@ def run_new_quiz():
         print(key)
         for choice in QUIZ_CHOICES[current_question_num-1]:
             print(choice)
-        answer_attempt = input(C.Y + "Enter your answer here:\n")
-         # if answer_attempt.strip() == '':
-            # print('invalid')
-        answer_attempt = answer_attempt.upper()
+        # answer_attempt = input(C.Y + "Enter your answer here:\n").upper()
+        answer_attempt = get_answer()
+        validate_answer_attempt(answer_attempt)
         answer_attempts.append(answer_attempt)
-        user_guesses_correct += validate_user_input(QUIZ_QUESTIONS.get(key),
+        user_guesses_correct += check_user_input(QUIZ_QUESTIONS.get(key),
             answer_attempt)
         current_question_num += 1
 
     display_user_score(user_guesses_correct, answer_attempts)
 
 
-def validate_user_input(correct_answer, answer_attempt):
+def get_answer():
+    while True:
+        answer_input = input(C.Y + "Enter your answer here:\n").upper()
+        answer_attempt = answer_input
+
+        if validate_answer_attempt(answer_attempt):
+            break
+    return answer_attempt
+
+
+def validate_answer_attempt(user_answer_attempt):
+    if user_answer_attempt not in ['A', 'B', 'C', 'D']:
+        print(C.R + 'Invalid input. Please enter A, B, C or D.')
+        return False
+    else:
+        return True
+
+
+def check_user_input(correct_answer, answer_attempt):
     """
     Compare the correct answer with user's answer attempt.
     Display feedback depending on the correctness of user's answer.
     """
-    # Error handling issue 17.01.2023 ~17:00
     if correct_answer == answer_attempt:
         print(' ')
         print(C.G + "Your answer is correct!\n")
@@ -268,7 +283,9 @@ def main():
     Execute all fundamental program functions.
     """
     welcome_logo()
+    """
     game_lore()
+    """
     run_new_quiz()
     replay_quiz()
 
