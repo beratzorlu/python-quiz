@@ -1,3 +1,8 @@
+"""
+Application connectivity with Google Drive API and
+Google Sheets API.
+Functionality to push data to database. 
+"""
 import gspread
 from google.oauth2.service_account import Credentials
 import time
