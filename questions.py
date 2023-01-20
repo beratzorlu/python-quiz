@@ -4,14 +4,14 @@ Contains questions and choices to be imported for the quiz application.
 
 QUIZ_QUESTIONS = {
     "What is the most abundant gas in the Earth's atmosphere?": "A",
-    "What term refers to the change of velocity with time?": "D",
+    "What term refers to the change of velocity with time?": "C",
     "What is the SI unit of an electric charge?": "D",
     "What is the unit of magnetic induction?": "B",
     "What is the escape velocity of the Earth?": "B",
     "Which is the weakest force in nature?": "B",
     "What is the rate of acceleration of gravity on Earth?": "C",
     "What is the unit of measurement of the electromotive force?": "C",
-    "What is Newton''s first law of motion about?": "A",
+    "What is Newton's first law of motion about?": "A",
     "Who wrote the Principia?": "C"
 }
 

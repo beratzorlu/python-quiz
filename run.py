@@ -1,5 +1,6 @@
 """
 Import libraries essential to the function of this application.
+Run the main quiz functionality.
 """
 import sys
 import os
