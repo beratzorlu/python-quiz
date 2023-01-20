@@ -94,6 +94,8 @@ def run_new_quiz():
         for choice in QUIZ_CHOICES[current_question_num-1]:
             print(choice)
         answer_attempt = input(C.Y + "Enter your answer here:\n")
+         # if answer_attempt.strip() == '':
+            # print('invalid')
         answer_attempt = answer_attempt.upper()
         answer_attempts.append(answer_attempt)
         user_guesses_correct += validate_user_input(QUIZ_QUESTIONS.get(key),
@@ -206,8 +208,7 @@ def get_username():
         print(C.B + '1. Your input should consist of 12 characters.\n')
         print(C.B + '2. Input cannot be less than 3 characters.\n')
         print(C.B + '3. Empty values are not accepted.\n')
-        username_input = input(print(C.Y + 'Please provde a username: \n'))
-
+        username_input = input(C.Y + 'Please provde a username: \n')
         username = username_input
 
         if validate_username(username):
