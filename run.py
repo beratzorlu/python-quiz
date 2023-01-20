@@ -31,7 +31,7 @@ def welcome_logo():
     print(' ')
     time.sleep(1.3)
 
-"""
+
 def game_lore():
     print_text_slow('In the dystopian future of 2555...\n')
     time.sleep(1)
@@ -60,7 +60,7 @@ def game_lore():
     print('---')
     time.sleep(5)
     clear_screen()
-"""
+
 
 def run_new_quiz():
     """
@@ -283,11 +283,10 @@ def main():
     Execute all fundamental program functions.
     """
     welcome_logo()
-    """
     game_lore()
-    """
     run_new_quiz()
     replay_quiz()
 
 
-main()
+if __name__ == '__main__':
+    main()
