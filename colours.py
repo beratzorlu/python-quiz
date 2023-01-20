@@ -1,3 +1,6 @@
+"""
+Colour library for text stylisation for the application.
+"""
 from colorama import init, Fore, Back, Style
 
 init(autoreset=True)
