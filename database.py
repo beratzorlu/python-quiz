@@ -1,12 +1,12 @@
 """
 Application connectivity with Google Drive API and
 Google Sheets API.
-Functionality to push data to database. 
+Functionality to push data to database.
 """
-import gspread
-from google.oauth2.service_account import Credentials
 import time
 from time import sleep
+import gspread
+from google.oauth2.service_account import Credentials
 from colours import QuizColours as C
 
 SCOPE = [
