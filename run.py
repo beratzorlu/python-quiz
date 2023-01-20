@@ -4,9 +4,9 @@ Run the main quiz functionality.
 """
 import sys
 import os
-import database as db
 import time
 from time import sleep
+import database as db
 from questions import QUIZ_QUESTIONS
 from questions import QUIZ_CHOICES
 from colours import QuizColours as C
@@ -24,7 +24,7 @@ def welcome_logo():
     print(C.G + '\ `--. _   _ ___| |_ ___ _ __ ___       | |_   _ _ __ | | __')
     print(C.G + " `--. \ | | / __| __/ _ \ '_ ` _ \      | | | | | '_ \| |/ /")
     print(C.G + '/\__/ / |_| \__ \ ||  __/ | | | | | /\__/ / |_| | | | |   < ')
-    print(C.G + '\____/ \__, |___/\__\___|_| |_| |_| \____/ \__,_|_| |_|_|\_\ ')
+    print(C.G + '\____/ \__, |___/\__\___|_| |_| |_| \____/ \__,_|_| |_|_|\_|')
     print(C.R + '         _/ |                                               ')
     print(C.R + '        |___/                                               ')
     print(' ')
@@ -55,14 +55,14 @@ def game_lore():
     time.sleep(1)
     print_text_slow('Citizens are tested for their fundamental knowledge.\n')
     time.sleep(1)
-    print_text_slow('Those who succeed get the privilage to continue their lives.\n')
+    print_text_slow('Those who succeed are allowed to continue their lives.\n')
     time.sleep(1)
     print_text_slow('Those who do not, are discarded as...\n')
     time.sleep(1)
     print(C.R + 'System ' + C.G + 'Junk\n')
     time.sleep(2)
     print('--\n')
-    print(C.B + 'Assesment initialization is complete, executing application...\n')
+    print(C.B + 'Assesment initialization complete, running application...\n')
     print('---')
     time.sleep(5)
     clear_screen()
@@ -86,7 +86,7 @@ def run_new_quiz():
     print(C.Y + 'You are not allowed to change yours answers.')
     print(C.Y + 'There are 10 question in total.')
     print(C.Y + 'Please choose *ONE* choice from (A, B, C, D)\n')
-    print(C.R + 'Disclaimer: ' + C.Y + 
+    print(C.R + 'Disclaimer: ' + C.Y +
           'Entered input can only be a choice letter.\n')
     for key in QUIZ_QUESTIONS:
         print('---')
@@ -185,7 +185,8 @@ def display_user_score(user_guesses_correct, answer_attempts):
     time.sleep(1)
     print(f'Your final score is: {final_score}\n')
     time.sleep(1)
-    print(f'You have performed with an accuracy of "{str(final_score_perc)}%"\n')
+    print(f'You have performed with an accuracy of "{str(final_score_perc)}%"')
+    print(' ')
 
 
 def replay_quiz():
@@ -217,7 +218,7 @@ def replay_quiz():
         print(C.R + "Invalid input submitted. Please enter 'Y' or 'N'")
         time.sleep(1)
         replay_quiz()
-    
+
 
 def get_username():
     """
@@ -242,7 +243,7 @@ def get_username():
             time.sleep(1)
             clear_screen()
             break
-    
+
     return username
 
 
@@ -268,24 +269,24 @@ def validate_username(user_input):
         return True
 
 
-def print_text_slow(str):
+def print_text_slow(text):
     """
     This is to provide a typing animation for the game_lore() function.
     Loop through each character in a string.
     Write each string on the terminal in slow succession.
     """
-    for char in str:
+    for char in text:
         time.sleep(.09)
         sys.stdout.write(char)
         sys.stdout.flush()
 
 
-def list_append(list, data):
+def list_append(new_list, data):
     """
     Take list and data parameters.
     Append data into specified list.
     """
-    list.append(data)
+    new_list.append(data)
 
 
 def clear_screen():
