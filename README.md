@@ -123,7 +123,15 @@ The design considerations that impacted the envisioned features were mainly stru
 
 ### Shared Elements
 
-The below elements are available to be experienced by the user across the website as a whole.
+The below elements are available to be experienced by the user across the quiz game application as a whole.
+
+#### Welcome Logo
+
+[Welcome Logo](docs/welcome-page.png)
+
+#### Game Story
+
+[Game Story](docs)
 
 ---
 
