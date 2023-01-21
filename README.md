@@ -180,7 +180,7 @@ The below elements are available to be experienced by the user across the quiz g
 
 #### Leaderboard
 
-- It is currently not possible to display a history of player data and compare the information in the database to structure a ranking system. However, the data already available in the Google Spreadsheets is sufficient to implemen this functionality. The development process for this project prioritized the completion of a minimum valuable product, thus removing a leaderboard feature from consideration. The implementation of a functionality like this would adequetly expand upon its capacity to display information to the player.
+- It is currently not possible to display a history of player data and compare the information in the database to structure a ranking system. However, the data already available in the Google Spreadsheets is sufficient to implement this functionality. The development process for this project prioritized the completion of a minimum valuable product, thus removing a leaderboard feature from consideration. The implementation of functionality like this would adequately expand upon its capacity to display information to the player.
 
 ---
 
