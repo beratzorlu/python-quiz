@@ -1,47 +1,36 @@
 # System Junk – Portfolio Project 3
 
-![Website mockup covering a range of devices]()
+![A screenshot of the application in action](docs/welcome-page.png)
 
-## [Link to live web application]()
+## [Link to live web application](https://system-junk.herokuapp.com/)
 
 ---
 
 ## Project Documentation
-### Welcome to [System Junk]
+### Welcome to [System Junk](https://system-junk.herokuapp.com/)
 
 ---
 
 ## Table of Contents
 
 -   [User Experience (UX)](#user-experience-ux)
+    -   [Objectives](#objectives)
     -   [User Stories](#user-stories)
 
 -   [Design Process](#design-process)
     -   [User Experience Design (UXD)](#user-experience-design-uxd)
-    -   [Wireframes](#wireframes)
     -   [Colour Palette](#colour-palette)
-    -   [Typography](#typography)
-    -   [Images](#images)
 
 -   [Website Features](#website-features)
     -   [Shared Elements](#shared-elements)
-    -   [Home](#home)
-    -   [404 Page](#404-page)
 
 -   [Future Features](#future-features) 
 
 -   [Testing](#testing)
     -   [User Stories Testing](#user-stories-testing) 
-    -   [Browser Testing](#browser-testing)
-    -   [Device Testing](#device-testing)
 
 -   [Validation](#validation)
-    -   [HTML](#html)
-    -   [CSS](#css)
-    -   [Lighthouse](#lighthouse)
-    -   [Accessibility](#accessibility)
-    -   [Mobile Compatibility](#mobile-compatibility)
-
+    -   [Python](#python)
 -   [Bug Fixes](#bug-fixes)
 
 -   [Deployment](#deployment)
@@ -59,24 +48,28 @@
 
 ## User Experience (UX)
 
+### Objectives
+
+User Objectives
+
+- Experience an enjoyable and brief quiz game application.
+- Be provided information regarding the rules of the quiz.
+- Have the ability to submit performance information with a unique username.
+- Be presented with a report of the user's unique overall performance in the game.
+
+Developer Objectives
+
+- Develop a game software that is straightforward to play.
+- Create a gameplay environment where the purpose of the game is clear to the player.
+- Ensure that the user receives feedback on the various processes that occur during the game.
+- Provide a game aesthetic that is unique to the game.
 
 
 ### User Stories
 
 - User Stories
 
-- Objectives
-
-    - Client Objectives:
-
-    - First Time Customer Objectives:
-        
-    - Frequent Visitor Objectives:
-        
-    - Returning Customer Objectives:
-
 ---
-
 
 ## Design Process
 
@@ -96,52 +89,8 @@
 
 - ### Surface
 
-
 ---
 
-## Wireframes
-
-Wireframes were designed using software named Balsamiq.
-
-### Home Page
-
-- Desktop 
-    - ![wireframe-home-desktop]()
-- Tablet
-    - ![wireframe-home-tablet]()
-- Phone
-    - ![wireframe-home-phone]()
-
-### Gallery Page
-
-- Desktop 
-    - ![wireframe-gallery-desktop]()
-- Tablet
-    - ![wireframe-gallery-tablet]()
-- Phone
-    - ![wireframe-gallery-phone]()
-
-### About Page
-
-- Desktop 
-    - ![wireframe-about-desktop]()
-- Tablet
-    - ![wireframe-about-tablet]()
-- Phone
-    - ![wireframe-about-phone]()
-
-### Order Page
-
-- Desktop 
-    - ![wireframe-order-desktop]()
-- Tablet
-    - ![wireframe-order-tablet]()
-- Phone
-    - ![wireframe-order-phone]()
-
----
-
----
 
 ### Colour Palette
 
@@ -153,21 +102,6 @@ matching colours that also have appropriate contrast.
 
 ---
 
-### Typography
-
-[Code Institute](https://codeinstitute.net/ie/)'s recommended approach to choosing fonts on [Google Fonts](https://fonts.google.com/about) was sufficient in finding satisfactory font families. Below is the list of fonts used to stylize the text content of the project;
-
-
-
-
----
-
-### Images
-
-
-
----
-
 ## Website Features
 
 The design considerations that impacted the envisioned features were mainly structured around conventional website design. While there were more features planned in the initial stages of the project, some were not entertained to the benefit of serving the needs referenced in the [User Stories](#user-stories) section. Thus, it was important to focus on a minimum viable project rather than prioritizing the implementation of further features for the sake of it. This would only bloat the website without adding much value to the user experience overall.
@@ -175,41 +109,6 @@ The design considerations that impacted the envisioned features were mainly stru
 ### Shared Elements
 
 The below elements are available to be experienced by the user across the website as a whole.
-
-- #### Navigation
-
-![navigation bar]()
-
-
-- #### Hero Image
-
-
-
-- #### Footer
-
-![footer]())
-
-- #### Favicon
-
-![favicon]()
-
-Designing a favicon for the website was a process that required a series of trials and errors to find the design that fit the project most appropriately. Providing image sizes that also fit different browsers and devices is an important concern in this area. 
-
-[Canva](https://www.canva.com/) was the service that allowed the design and creation of this element.
-
-### Home
-
-![home]()
-
-
-### About
-
-![about]()
- 
-
-### 404 Page
-
-![404]()
 
 ---
 
@@ -222,28 +121,11 @@ Designing a favicon for the website was a process that required a series of tria
 
 - ### User Stories Testing 
 
-
-- ### Browser Testing
-
-- ### Device Testing
-
+---
 
 ## Validation
 
-### HTML
-
-
-### CSS
-
-
-### Lighthouse
-
-
-
-### Accessibility
-
-
-### Mobile Compatibility
+### PYTHON
 
 ---    
 
