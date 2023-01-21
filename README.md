@@ -107,40 +107,19 @@ Developer
 
 ---
 
-## Design Process
-
-### User Experience Design (UXD)
-
-- ### Strategy 
-
-
-- ### Scope
-
-
-- ### Structure
-
-
-- ### Skeleton
-
-
-- ### Surface
-
----
-
-
 ### Colour Palette
 
 
 [Coolors](https://coolors.co/) was a highly beneficial resource in this regard which provided significant help in identifying
 matching colours that also have appropriate contrast.
 
-![Colour Palette]()
+![Colour Palette](docs/colour-palette.png)
 
 ---
 
 ## Website Features
 
-The design considerations that impacted the envisioned features were mainly structured around conventional website design. While there were more features planned in the initial stages of the project, some were not entertained to the benefit of serving the needs referenced in the [User Stories](#user-stories) section. Thus, it was important to focus on a minimum viable project rather than prioritizing the implementation of further features for the sake of it. This would only bloat the website without adding much value to the user experience overall.
+The design considerations that impacted the envisioned features were mainly structured around CLI-based considerations. While there were more features planned in the initial stages of the project, some were not entertained to the benefit of serving the needs referenced in the [User Stories](#user-stories) section. Thus, it was important to focus on a minimum viable project rather than prioritizing the implementation of further features for the sake of it. This would only bloat the application without adding much real value to the user experience overall.
 
 ### Shared Elements
 
