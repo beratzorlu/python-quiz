@@ -235,7 +235,7 @@ def get_username():
         print(C.B + '1. Your input should consist of 12 characters.\n')
         print(C.B + '2. Input cannot be less than 3 characters.\n')
         print(C.B + '3. Empty values are not accepted.\n')
-        username_input = input(C.Y + 'Please provde a username: \n')
+        username_input = input(C.Y + 'Please provide a username:\n')
         username = username_input
 
         if validate_username(username):
