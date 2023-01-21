@@ -80,8 +80,6 @@ Developer Objectives
 
 ### User Stories
 
-User Stories
-
 User
 
 -   As a user, I want to be presented with a clear welcome section.
@@ -160,7 +158,9 @@ The below elements are available to be experienced by the user across the quiz g
 
 ![System Feedback](docs/features/system-feedback.png)
 
-    There are many examples of the system feedback feature available throughout various sections implemented in the application. As every instance of this feature serve the same purpose, only one example is provided in the documentation to prevent repetition.
+    There are many examples of the system feedback feature available throughout various sections 
+    implemented in the application. As every instance of this feature serve the same purpose, 
+    only one example is provided in the documentation to prevent repetition.
 
 #### Player Performance
 
