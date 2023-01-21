@@ -133,7 +133,7 @@ The below elements are available to be experienced by the user across the quiz g
 
 ![Game Story](docs/features/story.png)
 
-#### Instructions
+#### Game Instructions
 
 ![Instructions](docs/features/instructions.png)
 
@@ -147,7 +147,32 @@ The below elements are available to be experienced by the user across the quiz g
 ![Incorrect Answer](docs/features/answer-incorrect.png)
 ![Invalid Answer](docs/features/answer-invalid.png)
 
-#### Username
+#### Username Input & Instructions
+
+![Username Instructions](docs/features/username-instructions.png)
+![Username Input](docs/features/username-input.png)
+
+#### Quiz Results
+
+![Quiz Resuts](docs/features/quiz-results.png)
+
+#### System Feedback
+
+![System Feedback](docs/features/system-feedback.png)
+
+    There are many examples of the system feedback feature available throughout various sections implemented in the application. As every instance of this feature serve the same purpose, only one example is provided in the documentation to prevent repetition.
+
+#### Player Performance
+
+![Player Performance](docs/features/player-performance.png)
+
+#### Game Restart
+
+![Game Restart](docs/features/game-restart.png)
+
+#### Quiz End 
+
+![Quiz End](docs/features/quiz-end.png)
 
 ---
 
