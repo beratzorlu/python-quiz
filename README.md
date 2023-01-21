@@ -1,6 +1,6 @@
 # System Junk – Portfolio Project 3
 
-![A screenshot of the application in action](docs/welcome-page.png)
+![A screenshot of the application in action](docs/features/welcome-page.png)
 
 ## [Link to live web application](https://system-junk.herokuapp.com/)
 
@@ -121,17 +121,33 @@ matching colours that also have appropriate contrast.
 
 The design considerations that impacted the envisioned features were mainly structured around CLI-based considerations. While there were more features planned in the initial stages of the project, some were not entertained to the benefit of serving the needs referenced in the [User Stories](#user-stories) section. Thus, it was important to focus on a minimum viable project rather than prioritizing the implementation of further features for the sake of it. This would only bloat the application without adding much real value to the user experience overall.
 
-### Shared Elements
+### Application Elements
 
 The below elements are available to be experienced by the user across the quiz game application as a whole.
 
 #### Welcome Logo
 
-[Welcome Logo](docs/welcome-page.png)
+![Welcome Logo](docs/features/welcome-page.png)
 
 #### Game Story
 
-[Game Story](docs)
+![Game Story](docs/features/story.png)
+
+#### Instructions
+
+![Instructions](docs/features/instructions.png)
+
+#### Questions & Choices
+
+![Questions](docs/features/questions.png)
+
+#### Answer Feedback
+
+![Correct Answer](docs/features/answer-correct.png)
+![Incorrect Answer](docs/features/answer-incorrect.png)
+![Invalid Answer](docs/features/answer-invalid.png)
+
+#### Username
 
 ---
 
