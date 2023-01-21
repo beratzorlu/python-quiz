@@ -41,7 +41,7 @@ def game_lore():
     """
     print_text_slow('In the dystopian future of 2555...\n')
     time.sleep(1)
-    print_text_slow('Mankind has abandoned the pursue of arts.\n')
+    print_text_slow('Mankind has abandoned the pursuit of arts.\n')
     time.sleep(1)
     print_text_slow('Our planet continuously degraded...\n')
     time.sleep(1)
