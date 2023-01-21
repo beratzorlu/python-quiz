@@ -9,10 +9,15 @@
 ## Project Documentation
 ### Welcome to [System Junk](https://system-junk.herokuapp.com/)
 
+Sytem Junk is quiz game application built as a part of Code Institute’s full-stack web development course curriculum. It utilises pure Python3 and a collection of libraries to expand on the functionality of the project.
+
+The present documentation will provide information critical to understanding the core design principles that enabled the development of the project. More specifically, details regarding the UX/UI development, application testing and deployment, code structure and maintainability, bug fixes and the planned future features for the project.
+
 ---
 
 ## Table of Contents
 
+-   [The Story](#thestory)
 -   [User Experience (UX)](#user-experience-ux)
     -   [Objectives](#objectives)
     -   [User Stories](#user-stories)
@@ -43,6 +48,14 @@
 -   [Credits and References](#credits-and-references)
 
 -   [Closing Remarks](#closing-remarks)
+
+---
+
+## The Story
+
+The concept of this application regards a traditional quiz game. System Junk is based on a fictional dystopian narrative created specifically for this project. In the year 2555, the player is presented with a story world where world societies have abandoned all pursuits outside of science. This was a direct result of the expiry of various natural resources, forcing humankind to seek refuge in the benefits found through progressing scientific knowledge. While this approach allowed humanity to survive, cultures changed their fundamental approach to arts and humanities where they only view it as redundant practices. Earth's nations are far away from their state 500 years ago, and most are only mere communities. Because of this, people still depend on science to find solutions to solve their biggest problems, and they expect all individuals to invest all their time in this area.
+
+More established societies have institutionalized this approach where every citizen is periodically tested on their knowledge of the fundamentals of science. Those who succeed in these assessments are granted further freedoms and living standards. Those who fail these tests, however, are removed from the mainstream margins of society and discarded to the outskirts of civilization with little to no rights to protect their humanity. Mainstream societies view these groups as unworthy of the full care of their governments, and label them as "Space Junk." These outcast communities have since developed into organized societies that aim to take back their fundamental rights. The fate of the world is unknown, but with the emerging activity in outcast communities, it is only plausible to expect nothing but a worldwide uprise brewing in the future to come.
 
 ---
 
