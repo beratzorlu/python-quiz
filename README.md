@@ -67,7 +67,30 @@ Developer Objectives
 
 ### User Stories
 
-- User Stories
+User Stories
+
+User
+
+-   As a user, I want to be presented with a clear welcome section.
+-   As a user, I want to be able to learn about the story of the game.
+-   As a user, I want to learn how to play the game before it starts.
+-   As a user, I want to be able to find instructions that are easy to understand.
+-   As a user, I want to be presented with questions that are clear and concise.
+-   As a user, I want to be able to view my answer options.
+-   As a user, I want to receive feedback from the game about the correctness of my answer.
+-   As a user, I want to receive feedback from the game when I do something that is not allowed.
+-   As a user, I want the game application to tell me what it is doing before and after the quiz completion.
+-   As a user, I want to be able to view a report of my results.
+-   As a user, I want to be able to provide a username to save my performance data.
+-   As a user, I want to be asked if I want to play the game again before the application stops.
+
+Developer
+
+-   As a developer, I want the user to learn about the game narrative before the application begins.
+-   As a developer, I want users to be provided feedback from the system whenever a new critical process is running.
+-   As a developer, I want usernames, final scores and final score percentages to be uploaded to Google Spreadsheets.
+-   As a developer, I want the user to be warned if they input invalid data or provide an incorrect answer.
+-   As a developer, I want user data to be subject to a data validation process to ensure the quality of data and the smooth run of the program.
 
 ---
 
