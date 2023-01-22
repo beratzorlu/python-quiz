@@ -85,8 +85,7 @@ User
 
 -   As a user, I want to be presented with a clear welcome section.
 -   As a user, I want to be able to learn about the story of the game.
--   As a user, I want to learn how to play the game before it starts.
--   As a user, I want to be able to find instructions that are easy to understand.
+-   As a user, I want to quickly learn how to play the game before it starts.
 -   As a user, I want to be presented with questions that are clear and concise.
 -   As a user, I want to be able to view my answer options.
 -   As a user, I want to receive feedback from the game about the correctness of my answer.
@@ -94,7 +93,8 @@ User
 -   As a user, I want the game application to tell me what it is doing before and after the quiz completion.
 -   As a user, I want to be able to view a report of my results.
 -   As a user, I want to be able to provide a username to save my performance data.
--   As a user, I want to be asked if I want to play the game again before the application stops.
+-   As a user, I want to be able to see a report of my overall game performance when I complete the game.
+-   As a user, I want to be asked if I want to play the game again before the application terminates.
 
 Developer
 
@@ -110,6 +110,24 @@ Developer
 
 ### Flowchart
 ![Flowchart](docs/flowchart.png)
+
+### Data Model
+
+    The data model of this application consists of compartmentalized code that is imported across different .py files to better manage the various functions in a manageable manner. The class structure present in the colours.py allows access to various colours with shortcuts that are specific to each colour. This way the predetermined elements in the Colorama library are shortened and made easy to access regarding the needs of this application.
+
+    As regards the quiz questions, a separate questions.py file is created to house all questions and choices of content to be used in the game. The logic of the code loops through both the QUIZ_QUESTIONS library and QUIZ_CHOICES list and prints these as a pair to the terminal. The correct answer is determined by comparing the question and answer key/value pair in the QUIZ_QUESTIONS list with the user input. Removing this section of the code from the run.py helped better manage the development process without making the code contained in the run.py file too crowded.
+
+    The database model of this project is arguably simple as the application itself did not require complex manipulation of user data. That being said, targeting specific and relevant data that the collection of which would add meaningful value to the application was a key consideration for the data model design. Thus, 3 data points, namely; 
+        
+        username,
+        final score,
+        final score percentage
+    
+    were identified as relevant to the goals of this project. This process is achieved by utilizing the combined functionality available in Google Drive API and Google Spreadheets API, where the application communicates with these services to upload relevant data to a target spreadsheet. Please find below a screenshot of the relevant Google Spreadsheet.
+
+<details><summary>Screenshot</summary>
+<img src="docs/gspread.png">
+</details>
 
 ---
 
@@ -194,7 +212,133 @@ The below elements are available to be experienced by the user across the quiz g
 
 ## Testing 
 
-- ### User Stories Testing 
+### Manual Testing
+
+<summary>User Stories Testing</summary>
+
+1. As a user, I want to be presented with a clear welcome section.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Welcome Logo | Run application | Users are presented with a logo. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/welcome-page.png">
+</details>
+
+2. As a user, I want to be able to learn about the story of the game.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Animated Story Text | Run application | Users are presented with an animated story section. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/story.png">
+</details>
+
+3. As a user, I want to learn how to play the game before it starts.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Instruction Text | Run application | Users are presented with game instructions. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/instructions.png">
+</details>
+
+4. As a user, I want to be presented with questions that are clear and concise.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Questions | Run application | Users are presented with questions. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/questions.png">
+</details>
+
+5. As a user, I want to be able to view my answer options.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Choices | Run application | Users are presented with choices. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/questions.png">
+</details>
+
+6. As a user, I want to receive feedback from the game about the correctness of my answer.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Answer Feedback | Input Answer | Users are presented with a feedback depending on whether they input the correct or incorrect answer. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/answer-correct.png">
+<img src="docs/features/answer-incorrect.png">
+</details>
+
+7. As a user, I want to receive feedback from the game when I do something that is not allowed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Invalid Input Feedback | Enter Invalid Input | Users are notified when their input is not allowed by the system. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/answer-invalid.png">
+</details>
+
+8. As a user, I want the game application to tell me what it is doing before and after the quiz completion.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| System Process Feedback | Run application | Users are presented with feedback from the system whenever a new process begins. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/system-feedback.png">
+<img src="docs/features/quiz-end.png">
+</details>
+
+9. As a user, I want to be able to view a report of my answers.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Quiz Answer Summary | Complete Quiz | Users are presented with a summary of their answers. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/quiz-results.png">
+</details>
+
+10. As a user, I want to be able to provide a username to save my performance data.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Save Username and Score | Complete Quiz | Users are asked to provide a username. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/username-instructions.png">
+<img src="docs/features/username-input.png">
+</details>
+
+11. As a user, I want to be able to see a report of my overall game performance when I complete the game.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Performance Summary | Submit Username | Users are displayed their saved usernames, final scores and overall accuracy percentages. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/player-performance.png">
+</details>
+
+12. As a user, I want to be asked if I want to play the game again before the application stops.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Game Restart Prompt | Submit Username | Users are presented with a prompt to choose between restarting or terminating the application. | Functions as intended |
+
+<details><summary>Screenshot</summary>
+<img src="docs/features/game-restart.png">
+</details>
+</details>
 
 ---
 
