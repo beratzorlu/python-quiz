@@ -381,6 +381,22 @@ In this section, all bugs that cased fatal errors that prevented the successful 
 
 ## Deployment
 
+This application has been deployed by using the Heroku cloud platform. Please find below the neccessary procdures to replicate the deployment process.
+
+You can find a [template](https://github.com/Code-Institute-Org/python-essentials-template) prepared by Code Institute that is designed to display this backend application in a modern web browser. This allows the project to be accessible for users without the need of any third party software other than an Internet browser application.
+
+### Local Deployment 
+
+*Gitpod* IDE is the development environment for this project.
+
+If you wish to make copy of this repository locally, you can clone this repository by inputting the following code into your preferred integrated development environment (IDE):
+- `git clone https://github.com/beratzorlu/python-quiz.git`
+
+As anoher method, you can click below button to create your own workspace using this repository if you are using Gitpod.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/beratzorlu/python-quiz)
+
+
 ---
 
 ## Technologies Used
