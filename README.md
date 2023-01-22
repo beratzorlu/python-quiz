@@ -202,6 +202,24 @@ The below elements are available to be experienced by the user across the quiz g
 
 ### PYTHON
 
+Code Institute's [Python Linter](https://pep8ci.herokuapp.com/) was the main resouce during the code validation process. The relevant code passes with overall success with occassional minor warnings.
+
+#### run.py
+
+![run.py](docs/testing/run-py.png)
+
+#### questions.py
+
+![questions.py](docs/testing/questions-py.png)
+
+#### colours.py
+
+![colours.py](docs/testing/colours-py.png)
+
+#### database.py
+
+![database.py](docs/testing/database-py.png)
+
 ---    
 
 ## Bug Fixes
