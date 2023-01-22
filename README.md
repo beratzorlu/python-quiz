@@ -113,17 +113,17 @@ Developer
 
 ### Data Model
 
-    The data model of this application consists of compartmentalized code that is imported across different .py files to better manage the various functions in a manageable manner. The class structure present in the colours.py allows access to various colours with shortcuts that are specific to each colour. This way the predetermined elements in the Colorama library are shortened and made easy to access regarding the needs of this application.
+The data model of this application consists of compartmentalized code that is imported across different .py files to better manage the various functions in a manageable manner. The class structure present in the colours.py allows access to various colours with shortcuts that are specific to each colour. This way the predetermined elements in the Colorama library are shortened and made easy to access regarding the needs of this application.
 
-    As regards the quiz questions, a separate questions.py file is created to house all questions and choices of content to be used in the game. The logic of the code loops through both the QUIZ_QUESTIONS library and QUIZ_CHOICES list and prints these as a pair to the terminal. The correct answer is determined by comparing the question and answer key/value pair in the QUIZ_QUESTIONS list with the user input. Removing this section of the code from the run.py helped better manage the development process without making the code contained in the run.py file too crowded.
+As regards the quiz questions, a separate questions.py file is created to house all questions and choices of content to be used in the game. The logic of the code loops through both the QUIZ_QUESTIONS library and QUIZ_CHOICES list and prints these as a pair to the terminal. The correct answer is determined by comparing the question and answer key/value pair in the QUIZ_QUESTIONS list with the user input. Removing this section of the code from the run.py helped better manage the development process without making the code contained in the run.py file too crowded.
 
-    The database model of this project is arguably simple as the application itself did not require complex manipulation of user data. That being said, targeting specific and relevant data that the collection of which would add meaningful value to the application was a key consideration for the data model design. Thus, 3 data points, namely; 
-        
-        username,
-        final score,
-        final score percentage
+The database model of this project is arguably simple as the application itself did not require complex manipulation of user data. That being said, targeting specific and relevant data that the collection of which would add meaningful value to the application was a key consideration for the data model design. Thus, 3 data points, namely; 
     
-    were identified as relevant to the goals of this project. This process is achieved by utilizing the combined functionality available in Google Drive API and Google Spreadheets API, where the application communicates with these services to upload relevant data to a target spreadsheet. Please find below a screenshot of the relevant Google Spreadsheet.
+    - username,
+    - final score,
+    - final score percentage
+
+were identified as relevant to the goals of this project. This process is achieved by utilizing the combined functionality available in Google Drive API and Google Spreadheets API, where the application communicates with these services to upload relevant data to a target spreadsheet. Please find below a screenshot of the relevant Google Spreadsheet.
 
 <details><summary>Screenshot</summary>
 <img src="docs/gspread.png">
