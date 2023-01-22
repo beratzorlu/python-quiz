@@ -204,21 +204,22 @@ The below elements are available to be experienced by the user across the quiz g
 
 Code Institute's [Python Linter](https://pep8ci.herokuapp.com/) was the main resouce during the code validation process. The relevant code passes with overall success with occassional minor warnings.
 
-#### run.py
+<details><summary>PEP8 Validation: run.py</summary>
+<img src="docs/testing/run-py.png">
+<ul><li>The errors detected for this file come from the ASCII art implemented to display the logo of the game. While these warnings can be avoided by removing the logo art, this would take away from the identity of the game. There is also an instance of indenting code for visual purposes which helped keep the lines 100-101 from being too long.</li></ul>
+</details>
 
-![run.py](docs/testing/run-py.png)
+<details><summary>PEP Validatation: questions.py</summary>
+<img src="docs/testing/questions-py.png">
+</details>
 
-#### questions.py
+<details><summary>PEP Validatation: colours.py</summary>
+<img src="docs/testing/colours-py.png">
+</details>
 
-![questions.py](docs/testing/questions-py.png)
-
-#### colours.py
-
-![colours.py](docs/testing/colours-py.png)
-
-#### database.py
-
-![database.py](docs/testing/database-py.png)
+<details><summary>PEP Validatation: database.py</summary>
+<img src="docs/testing/database-py.png">
+</details>
 
 ---    
 
