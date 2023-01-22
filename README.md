@@ -36,6 +36,7 @@ The present documentation will provide information critical to understanding the
 
 -   [Validation](#validation)
     -   [Python](#python)
+
 -   [Bug Fixes](#bug-fixes)
 
 -   [Deployment](#deployment)
@@ -102,6 +103,13 @@ Developer
 -   As a developer, I want usernames, final scores and final score percentages to be uploaded to Google Spreadsheets.
 -   As a developer, I want the user to be warned if they input invalid data or provide an incorrect answer.
 -   As a developer, I want user data to be subject to a data validation process to ensure the quality of data and the smooth run of the program.
+
+---
+
+## Technical Design
+
+### Flowchart
+![Flowchart](docs/flowchart.png)
 
 ---
 
