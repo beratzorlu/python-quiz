@@ -369,6 +369,13 @@ Code Institute's [Python Linter](https://pep8ci.herokuapp.com/) was the main res
 
 ## Bug Fixes
 
+In this section, all bugs that cased fatal errors that prevented the successful execution of the application and their relevant fixes are provided.
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| get_username() 'None' Text Display: A bug where a 'None' text appeared during when the system was expecting input from the user for their username. | Fixed by removing the print element nested inside an outer input element. Click [here](https://github.com/beratzorlu/python-quiz/commit/d3fc300dc47d88aecd65f99b7ab7cbb6ca6f13b7) to review the relevant commit. |
+| Unexpected Game Restart Bug: A bug causing the game to restart the game automatically without asking for input after the user chooses to restart the game at their first go. | Fixed by removing the while loop in the main() function. Click [here](https://github.com/beratzorlu/python-quiz/commit/8e7f2c66ffeeeeec7f6998f9da32b7d5518b647e) to review the relevant commit. |
+| Invalid Question Answer Bug: A bug where the application would accept input other than A, B, C, or D and register it as an incorrect answer. | Fixed by adding two seperate functions that accept and then validate the user input before passing it to answer check process. Click [here](https://github.com/beratzorlu/python-quiz/commit/c201cb2e448cf5d6f93e1de7d2fe05eb9b4351a3) to review the relevant commit. |
 
 ---
 
