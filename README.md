@@ -387,14 +387,16 @@ You can find a [template](https://github.com/Code-Institute-Org/python-essential
 
 ### Local Deployment 
 
-*Gitpod* IDE is the development environment for this project.
+Gitpod IDE is the development environment for this project.
 
-If you wish to make copy of this repository locally, you can clone this repository by inputting the following code into your preferred integrated development environment (IDE):
+If you wish to make copy of this repository locally, you can clone it by inputting the following code into your preferred integrated development environment (IDE):
 - `git clone https://github.com/beratzorlu/python-quiz.git`
 
 As anoher method, you can click below button to create your own workspace using this repository if you are using Gitpod.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/beratzorlu/python-quiz)
+
+### Heroku Deployment
 
 
 ---
