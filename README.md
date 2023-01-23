@@ -221,6 +221,10 @@ The below elements are available to be experienced by the user across the quiz g
 
 - It is currently not possible to display a history of player data and compare the information in the database to structure a ranking system. However, the data already available in the Google Spreadsheets tied to the program is sufficient to implement this functionality. The development process for this project prioritized the completion of a minimum valuable product, thus removing a leaderboard feature from consideration. The future implementation of functionality like this would adequately expand upon its capacity to display information to the player.
 
+#### Custom Performance Text
+
+- Featuring specific text content sensitive to the overall performance of the player will add an additional level of interaction between the player and the game. Having the program detect and react to the final score of the user this way would present more opportunities for the player to replay the game to find out the different reactions the game features, thus, increasing overall replayability.
+
 ---
 
 ## Testing 
