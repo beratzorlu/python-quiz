@@ -294,6 +294,7 @@ def list_append(new_list, data):
 # directly taken. Refer to Credits and References
 # section in the README.md for further details
 
+
 def clear_screen():
     """
     Delete all visible text content on console.

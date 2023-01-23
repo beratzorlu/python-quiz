@@ -19,6 +19,7 @@ The present documentation will provide information critical to understanding the
 
 -   [The Story](#the-story)
 -   [User Experience (UX)](#user-experience-ux)
+    -   [Target Audiance](#target-audiance)
     -   [Objectives](#objectives)
     -   [User Stories](#user-stories)
     -   [Colour Palette](#colour-palette)
@@ -72,6 +73,10 @@ More established societies have institutionalized this approach where every citi
 ---
 
 ## User Experience (UX)
+
+### Target Audiance
+
+This project targets the general audiance inclusive of all ages. It is reccomended that the players have at least a good comprehension of the English language and are familiar with quiz games.
 
 ### Objectives
 
