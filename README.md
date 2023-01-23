@@ -485,6 +485,9 @@ Alternatively, you can connect to your Github account by following the below ste
 - CodePen: For quickly testing out ideas before carrying them to 
 DevTools.
 - Coolors: For creating a matching colour palette that has appropriate contrast.
+- Google Cloud: For accessing a library of Google-based API services.
+- Google Drive API: For communicating with a cloud service to upload data.
+- Google Sheets API: For reading and writing automated data to a cloud-hosted spreadsheet file.
 
 ### Libraries
 
@@ -566,6 +569,8 @@ Gspread - Used to upload user data to a cloud-based database as vanilla Python l
 
 - [Tech With Tim](https://www.youtube.com/@TechWithTim): This YouTube channel was helpful understanding how to successfully install the Colorama library.
     - [How To Print Colored Text in Python (Colorama Tutorial)](https://www.youtube.com/watch?v=u51Zjlnui4Y)
+
+- [Code Insitute](https://codeinstitute.net/ie/): The theory available in the Code Institute curriculum has been central in successfully setting up and utilizing Google Cloud API services for this project.
 
 ### Theory
 
