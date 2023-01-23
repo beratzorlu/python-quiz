@@ -499,19 +499,73 @@ Gspread - Used to upload user data to a cloud-based database as vanilla Python l
 
 ## Credits and References
 
-### Code
+### Code Structure
 
 - [Code Institute](https://codeinstitute.net/): I would like to thank Code Institute for their support and guidance throughout the development of this project.
     - The [Love Sandwiches](https://github.com/beratzorlu/love-sandwiches) was instrumental in learning how to connect to Google Drive and Google Spreadsheets API services, how to define scope in the code in regards to API, connecting Python code with cloud platforms to upload and pull data, and creating user input validation processes.
 
+- [Bro Code](https://www.youtube.com/@BroCodez): This YouTube channel has been helpful in building the core logic of a Python-based quiz game. The videos specified below has been the primary source of inspiration in the development process of this project. 
+
+    - [QUIZ GAME written in Python](https://www.youtube.com/watch?v=zehwgTB0vV8)
+    - [Python quiz game](https://www.youtube.com/watch?v=yriw5Zh406s)
+
 - [Aleksandracodes](https://github.com/aleksandracodes/CI_PP3_Connect4#libraries): This project has been highly inspirational in understanding how to implement testing procedures for the program functionality, how to import third party libraries, compartmentalising code into seperate files, and using class structures to create shortcuts to various third party functionality (ie. creating a class to have shorthand access to colours in colorama).
 
-- [W3Schools](https://www.w3schools.com/)
+- [Adamgilroy22](https://github.com/adamgilroy22/python-hangman): This repository provided valuable understanding regarding how to approach to structuring documentation for this project.
+
+- [W3Schools](https://www.w3schools.com/): This website has been key in understanding and getting further practice with various approaches to coding with Python3.
+    - [Python Iterators](https://www.w3schools.com/python/python_iterators.asp)
+
+- [Stack Overflow](https://stackoverflow.com/): This project heavily made use of Stack Overflow for troubleshooting problems that occurred throughout the development process. Below is are entries used to supplament this project.
+    - [Indentation Error In Python Caused By Unidentitfied Reason](https://stackoverflow.com/questions/75159904/indentation-error-in-python-caused-by-unidentitfied-reason?noredirect=1#comment132631154_75159904) (Own Post: Post has been closed at the time of writing this documentation.)
+    - [Randomised Quiz Using Dictionary](https://stackoverflow.com/questions/39605919/how-do-i-create-a-randomised-quiz-using-a-dictionary) (The post is active at the time of writing this documentation.)
+    - [Why Does "a == x Or y or z" Always Evaluate To True? How Can I Compare "a" To All Of Those?](https://stackoverflow.com/questions/20002503/why-does-a-x-or-y-or-z-always-evaluate-to-true-how-can-i-compare-a-to-al) (The post is active at the time of writing this documentation.)
+    - [If An Exception Is Raised Ask Again For Input](https://stackoverflow.com/questions/21943973/if-an-exception-is-raised-ask-again-for-input) (The post is active at the time of writing this documentation.)
+    - [Typing Effect in Python](https://stackoverflow.com/questions/20302331/typing-effect-in-python) (The post is active at the time of writing this documentation.)
+
+- [freecodecamp](https://www.freecodecamp.org/): This platform has been helpful in learning about various functionality and use-cases in Python.
+    - [How to Get The Size of a List](https://www.freecodecamp.org/news/python-list-length-how-to-get-the-size-of-a-list-in-python/)
+    - [How to Use the Does Not Equal Operator](https://www.freecodecamp.org/news/python-not-equal-how-to-use-the-does-not-equal-operator/ )
+
+- [Real Python](https://realpython.com/): Python tutorials available on this platform were helpful in understanding how to build a quiz game with Python.
+    - [Identity vs Equality](https://realpython.com/python-is-identity-vs-equality/)
+    - [Python Quiz Application](https://realpython.com/python-quiz-application/#step-4-separate-data-into-its-own-file)
+
+- [Python Examples](https://pythonexamples.org): This platform was useful in understanding how to use various data structures available in Python.
+    - [List of Dictionaries](https://pythonexamples.org/python-list-of-dictionaries/)
+
+- [Brittanica](https://www.britannica.com/): This website includes a myriad of quiz applications tailored for an expansive collection of subjects.
+    - [All About Physics Quiz](https://www.britannica.com/quiz/all-about-physics-quiz)
+
+- [Make Use Of](https://www.makeuseof.com): This website had useful information in understanding how to build an interactive quiz game using Python.
+    - [Python Make Interactive Quiz Game](https://www.makeuseof.com/python-make-interactive-quiz-game/#how-to-create-the-python-script-and-add-your-first-quiz-question)
+
+- [Programiz](https://www.programiz.com): This website was helpful in understanding how to effectively implement if statements into the project.
+    - [If Elif Else](https://www.programiz.com/python-programming/if-elif-else)
+
+- [Bobbyhadz](https://bobbyhadz.com): Information available in this blog was useful in learning about how to handle invalid user input.
+    - [Python Prevent Empty User Input](https://bobbyhadz.com/blog/python-prevent-empty-user-input)
+
+- [Official Python Website](https://www.python.org/): The official Python website was central in understanding how to correctly use various concepts while with this language.
+    - [Top Level Environment](https://docs.python.org/3/library/__main__.html)
+
+- [Digital Ocean](https://www.digitalocean.com): This website presented valuable information in understanding how to feature a text typing animation.
+    - [Python Time Sleep](https://www.digitalocean.com/community/tutorials/python-time-sleep)
+
+- [napoleon](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html):
+    - [Docstrings Guide](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
+
+### Libraries
+
+- [The Python Package Index (PyPI)](https://pypi.org/): PyPI was critical in accessing libraries that added functionality to the project that otherwise would be impossible to feature in the end product.
+    - [Colorama Documentation](https://pypi.org/project/colorama/)
+
+- [Tech With Tim](https://www.youtube.com/@TechWithTim): This YouTube channel was helpful understanding how to successfully install the Colorama library.
+    - [How To Print Colored Text in Python (Colorama Tutorial)](https://www.youtube.com/watch?v=u51Zjlnui4Y)
 
 ### Theory
 
 - [UCD Professional Academy](https://www.ucd.ie/professionalacademy/): I would like to thank UCD PA for their facilitator and masterclass sessions in partnership with Code Insitute. These have been invaluable in better understanding relevant theory and practice elements.
-
 
 --- 
 
