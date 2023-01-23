@@ -57,6 +57,8 @@ The present documentation will provide information critical to understanding the
     -   [Library Information](#library-information)
     -   [Theory](#theory)
 
+-   [Acknowledgements](#acknowledgements)
+
 -   [Closing Remarks](#closing-remarks)
 
 ---
