@@ -17,7 +17,7 @@ The present documentation will provide information critical to understanding the
 
 ## Table of Contents
 
--   [The Story](#thestory)
+-   [The Story](#the-story)
 -   [User Experience (UX)](#user-experience-ux)
     -   [Objectives](#objectives)
     -   [User Stories](#user-stories)
