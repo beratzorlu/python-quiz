@@ -465,6 +465,7 @@ Alternatively, you can connect to your Github account by following the below ste
 ### Hardware
 
 - Monster Abra A5 V13.4 15.6" Laptop
+- Lenovo IdeaPad 3i 14" Laptop
 - Samsung VA 1920x1080 144Hz Curved Gaming Monitor
 - iPhone 11
 - Ipad Air 5th Generation
