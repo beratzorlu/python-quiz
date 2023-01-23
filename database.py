@@ -9,6 +9,10 @@ import gspread
 from google.oauth2.service_account import Credentials
 from colours import QuizColours as C
 
+# Scope and constant vars taken from love_sandwiches walkthrough project
+# available in Code Institute Curriculum. Refer to Credits and References
+# section in the README.md for further details
+
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",

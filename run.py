@@ -289,6 +289,11 @@ def list_append(new_list, data):
     new_list.append(data)
 
 
+# clear_screen() function taken from Stack Overflow
+# Function name has been changed but the logic is
+# directly taken. Refer to Credits and References
+# section in the README.md for further details
+
 def clear_screen():
     """
     Delete all visible text content on console.
