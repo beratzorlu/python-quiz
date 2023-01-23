@@ -21,18 +21,19 @@ The present documentation will provide information critical to understanding the
 -   [User Experience (UX)](#user-experience-ux)
     -   [Objectives](#objectives)
     -   [User Stories](#user-stories)
-
--   [Design Process](#design-process)
-    -   [User Experience Design (UXD)](#user-experience-design-uxd)
     -   [Colour Palette](#colour-palette)
 
+- [Technical Design](#technical-design)
+    -   [Flowchart](#flowchart)
+    -   [Data Model](#data-model)
+
 -   [Website Features](#website-features)
-    -   [Shared Elements](#shared-elements)
+    -   [Application Elements](#application-elements)
 
 -   [Future Features](#future-features) 
 
 -   [Testing](#testing)
-    -   [User Stories Testing](#user-stories-testing) 
+    -   [Manual Testing](#manual-testing) 
 
 -   [Validation](#validation)
     -   [Python](#python)
@@ -40,14 +41,21 @@ The present documentation will provide information critical to understanding the
 -   [Bug Fixes](#bug-fixes)
 
 -   [Deployment](#deployment)
+    -   [Local Deployment](#local-deployment)
+    -   [Heroku Deployment](#heroku-deployment)
 
 -   [Technologies Used](#technologies-used)
     -   [Hardware](#hardware)
     -   [Software](#software)
     -   [Platforms](#platforms)
     -   [Libraries](#libraries)
+        -   [Local Libraries](#local-libraries)
+        -   [Third Party Libraries](#third-party-libraries)
 
 -   [Credits and References](#credits-and-references)
+    -   [Code Structure](#code-structure)
+    -   [Library Information](#library-information)
+    -   [Theory](#theory)
 
 -   [Closing Remarks](#closing-remarks)
 
@@ -79,7 +87,6 @@ Developer Objectives
 - Ensure that the user receives feedback on the various processes that occur during the game.
 - Provide a game aesthetic that is unique to the game.
 
-
 ### User Stories
 
 User
@@ -105,6 +112,14 @@ Developer
 -   As a developer, I want the user to be warned if they input invalid data or provide an incorrect answer.
 -   As a developer, I want user data to be subject to a data validation process to ensure the quality of data and the smooth run of the program.
 
+### Colour Palette
+
+
+[Coolors](https://coolors.co/) was a highly beneficial resource in this regard which provided significant help in identifying
+matching colours that also have appropriate contrast.
+
+![Colour Palette](docs/colour-palette.png)
+
 ---
 
 ## Technical Design
@@ -129,16 +144,6 @@ were identified as relevant to the goals of this project. This process is achiev
 <details><summary>Screenshot</summary>
 <img src="docs/gspread.png">
 </details>
-
----
-
-### Colour Palette
-
-
-[Coolors](https://coolors.co/) was a highly beneficial resource in this regard which provided significant help in identifying
-matching colours that also have appropriate contrast.
-
-![Colour Palette](docs/colour-palette.png)
 
 ---
 
@@ -494,7 +499,6 @@ Colourama - Used to provide colour to the text used in the application to provid
 
 Gspread - Used to upload user data to a cloud-based database as vanilla Python lacks this functionality.
 
-
 ---
 
 ## Credits and References
@@ -555,7 +559,7 @@ Gspread - Used to upload user data to a cloud-based database as vanilla Python l
 - [napoleon](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html):
     - [Docstrings Guide](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 
-### Libraries
+### Library Information
 
 - [The Python Package Index (PyPI)](https://pypi.org/): PyPI was critical in accessing libraries that added functionality to the project that otherwise would be impossible to feature in the end product.
     - [Colorama Documentation](https://pypi.org/project/colorama/)
