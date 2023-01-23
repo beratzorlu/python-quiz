@@ -392,12 +392,58 @@ Gitpod IDE is the development environment for this project.
 If you wish to make copy of this repository locally, you can clone it by inputting the following code into your preferred integrated development environment (IDE):
 - `git clone https://github.com/beratzorlu/python-quiz.git`
 
-As anoher method, you can click below button to create your own workspace using this repository if you are using Gitpod.
+As anoher method, you can click below button to create your own workspace using this repository if you are using Gitpod.e
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/beratzorlu/python-quiz)
 
 ### Heroku Deployment
 
+This project utilizes the services available at [Heroku](https://www.heroku.com). Heroku is a platform as a service (PaaS) that allows users to build, deploy, and control applications in a cloud environment.
+
+Disclaimer: To be able successfully replicate the Heroku deployment process, it is highly reccomended that users setup an account on the platform prior to following the steps provided below.
+
+- Select *New* in the top-right corner of your Heroku Dashboard after log-in.
+- Select navigate to the *Create new app* button from the dropdown menu and select it.
+- Assign a unique name to your application.
+- Navigate to the *region* dropdown menu and select the region closest to you from either EU or USA. 
+- Select *Create App*.
+- Navigate to your newly created application and select *Settings*. 
+- Click *Reveal Config Vars*.
+- Add first *Config Var*.
+- Set the value of KEY to `CREDS`, copy and paste the data in your credentials file (ie. creds.json) into the value area.
+- Add second *Config Var*.
+- Set the value of KEY to `PORT`, and the value to `8000` then select *add*.
+- You need to add support to dependencies to be able to successfully deploy application, select *Add Buildpack*.
+- The order in which you list your dependencies is critical, select `Python` as the first dependency.
+- From the same menu, select `Node.js` after you select `Python`. (You can drag the list items upwards and downwards to change their order if needed.)
+- Scroll until you find your desired deployment method, select `Enable Automatic Deploy` to rebuild your project automatically every time you push a new commit. Select `Manual Deployment` to manually deploy from your desired branch on will.*
+
+*If you have selected automatic deployment, your application will only deploy after your first push to the system.
+
+After the completion of this process, Heroku needs two files further to deploy successfully. These are;
+    - requirements.txt
+    - Procfile
+
+To install your project's requirements use: `pip3 install -r requirements.txt`. 
+
+If you have third party packages in your project the requirements file needs updated, use: `pip3 freeze --local > requirements.txt`
+
+To create your Procfile, use: `echo web: node index.js > Procfile`
+
+For Heroku deployment, follow these steps to connect your GitHub repository to the newly created app:
+
+- In the Terminal (CLI), connect to Heroku using this: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a <app_name>` (replace <app_name> with your chosen name for your application without the angle-brackets)
+- Input commands `git add`, `git commit`, and `git push` to GitHub sequentially.
+- Finally, type `git push heroku main` in the terminal to connect to Github.
+
+Alternatively, you can connect to your Github account by following the below steps on Heroku's platform.
+
+- Navigate to your Heroku account dashboard.
+- Find the relevant project and click on its icon.
+- On the next page, navigate to the `Deploy` subsection.
+- Scroll down until you find `Deployment method` and find `Use Github`.
+- Finally, input your Github account credentials to complete the process. 
 
 ---
 
