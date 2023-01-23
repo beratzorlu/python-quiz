@@ -499,6 +499,19 @@ Gspread - Used to upload user data to a cloud-based database as vanilla Python l
 
 ## Credits and References
 
+### Code
+
+- [Code Institute](https://codeinstitute.net/): I would like to thank Code Institute for their support and guidance throughout the development of this project.
+    - The [Love Sandwiches](https://github.com/beratzorlu/love-sandwiches) was instrumental in learning how to connect to Google Drive and Google Spreadsheets API services, how to define scope in the code in regards to API, connecting Python code with cloud platforms to upload and pull data, and creating user input validation processes.
+
+- [Aleksandracodes](https://github.com/aleksandracodes/CI_PP3_Connect4#libraries): This project has been highly inspirational in understanding how to implement testing procedures for the program functionality, how to import third party libraries, compartmentalising code into seperate files, and using class structures to create shortcuts to various third party functionality (ie. creating a class to have shorthand access to colours in colorama).
+
+- [W3Schools](https://www.w3schools.com/)
+
+### Theory
+
+- [UCD Professional Academy](https://www.ucd.ie/professionalacademy/): I would like to thank UCD PA for their facilitator and masterclass sessions in partnership with Code Insitute. These have been invaluable in better understanding relevant theory and practice elements.
+
 
 --- 
 
@@ -506,4 +519,4 @@ Gspread - Used to upload user data to a cloud-based database as vanilla Python l
 
 
 ---
- [Back to Top]()
+ [Back to Top](#table-of-contents)
