@@ -559,7 +559,7 @@ Gspread - Used to upload user data to a cloud-based database as vanilla Python l
 - [Digital Ocean](https://www.digitalocean.com): This website presented valuable information in understanding how to feature a text typing animation.
     - [Python Time Sleep](https://www.digitalocean.com/community/tutorials/python-time-sleep)
 
-- [napoleon](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html):
+- [napoleon](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html): This website was helpful in understanding how to write effective docstrings in my Python code.
     - [Docstrings Guide](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 
 ### Library Information
