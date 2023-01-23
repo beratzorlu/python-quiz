@@ -45,6 +45,7 @@ The present documentation will provide information critical to understanding the
     -   [Hardware](#hardware)
     -   [Software](#software)
     -   [Platforms](#platforms)
+    -   [Libraries](#libraries)
 
 -   [Credits and References](#credits-and-references)
 
@@ -453,8 +454,9 @@ Alternatively, you can connect to your Github account by following the below ste
 
 - Monster Abra A5 V13.4 15.6" Laptop
 - Samsung VA 1920x1080 144Hz Curved Gaming Monitor
-- iPhone 7 Plus
-- Samsung Galaxy A51
+- iPhone 11
+- Ipad Air 5th Generation
+- Samsung A51
 
 ### Software
 
@@ -464,23 +466,34 @@ Alternatively, you can connect to your Github account by following the below ste
 - Firefox Mobile: Mobile testing of the deployed site.
 - Chrome Mobile: Mobile testing of the deployed site.
 - Safari Mobile: Mobile testing of the deployed site.
-- GIMP: Used for converting .jpg and .png files to .webp for site optimization.
-- Balsamiq: Used for wireframing.
 - Windows Snip & Sketch: Capturing screenshots for readme and archiving identified bugs.
 - Microsoft Snipping Tool: Fallback screen capture software when MS Snip & Sketched became unresponsive.
+- DiffChecker: Comparing code to identify issues, solutions and ideas.
+- Python Checker: Checking the syntax of Python code.
+- Patorjk: Generating custom ASCII art.
 
 ### Platforms
 
 - GitHub: Version control and site deployment.
 - GitPod: Integrated Development Environment (IDE) chosen for this project.
-- Pexels: Primary source for high-quality royalty-free images.
-- Pixabay: Secondary source for high-quality royalty-free images.
 - Google Fonts: Finding and exporting third-party fonts for the website.
 - CodePen: For quickly testing out ideas before carrying them to 
 DevTools.
-- Font Awesome: For importing fonts to further decorate text elements.
 - Coolors: For creating a matching colour palette that has appropriate contrast.
-- Code Beautify: For looking for differences between two pieces of code. This helped me identify my mistakes.
+
+### Libraries
+
+#### Local Libraries
+
+os - Used to clear terminal.
+sys, sleep, time - Used to create a typing effect in various sections of the application.
+
+#### Third Party Libraries
+
+Colourama - Used to provide colour to the text used in the application to provide visual stimulation as vanilla Python lacks this functionality.
+
+Gspread - Used to upload user data to a cloud-based database as vanilla Python lacks this functionality.
+
 
 ---
 
